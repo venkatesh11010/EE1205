@@ -1,0 +1,173 @@
+% \iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{NCERT 11.15. Q10}
+\author{EE23BTECH11010 - Venkatesh Bandawar$^{*}$% <-this % stops a space
+}
+\maketitle
+\newpage
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+\bibliographystyle{IEEEtran}
+
+\parindent 0px
+\textbf{Question:} For the travelling harmonic wave
+y\brak {x, t} = 2.0 cos 2$\pi$ \brak{10t - 0.0080 x + 0.35} where x and y are in cm and t in s. Calculate the phase difference between oscillatory
+motion of two points separated by a distance of 
+
+\begin{enumerate} [label=(\alph*)]
+    \item 4 m
+    \item 0.5 m
+    \item $\lambda$/2
+    \item 3$\lambda$/4
+\end{enumerate}
+
+\textbf{Solution:}  
+
+Harmonic wave :
+\begin{equation}
+    y\brak{x, t} = 2.0 \cos 2\pi \brak{10t - 0.0080 x + 0.35}
+\end{equation}
+
+Phase of harmonic wave (at x):
+\begin{equation}
+    = 2\pi \brak{10t - 0.0080x + 0.35}
+\end{equation}
+\begin{align}
+    k &= 2\pi(0.008) \label{} \\
+    \because k &= \dfrac{2\pi}{\lambda} \\
+    \lambda &= \dfrac{2\pi}{k} \\
+    \lambda &= \dfrac{2\pi}{2 \pi \times 0.008} \\
+    \lambda &= 125 \text{cm}
+\end{align}
+
+\begin{enumerate} [label=(\alph*)]
+    \item  phase of harmonic wave at (x+400cm) :
+\begin{align}
+    = 2\pi \brak{10t - 0.0080(x+400) + 0.35} 
+\end{align}
+\begin{center}
+ \brak{from equation \brak{2}}
+\end{center}
+
+$\Rightarrow$  phase difference :
+\begin{align}
+    \begin{split}
+        &= 2\pi \brak{10t - 0.0080\brak{x+400} + 0.35} \\
+        &\quad - 2\pi\brak{10t - 0.0080x + 0.35}
+    \end{split}
+     \\
+    &= 2\pi \times 0.0080 \times 400\\
+    &= 6.4 \pi\, \text{radians}
+\end{align}
+
+   \item phase of harmonic wave at \brak{x+50cm} :
+\begin{align}
+    = 2\pi \brak{10t - 0.0080\brak{x+50} + 0.35}
+\end{align}
+\begin{center}
+ \brak{from equation \brak{2}}
+\end{center}
+
+$\Rightarrow$  phase difference :
+\begin{align}
+    \begin{split}
+        &= 2\pi\brak{10t - 0.0080\brak{x+50} + 0.35} \\
+        &\quad - 2\pi \brak{10t - 0.0080x  +0.35} 
+    \end{split}
+    \\
+    &= 2\pi \times 0.0080 \times 50\\
+    &= 0.8\pi \, \text{radians}
+\end{align}
+
+    \item phase of harmonic wave at $ \left (x+\dfrac{\lambda}{2}\right) $:
+\begin{align}
+    = 2\pi(10t - 0.0080 \left(x+\dfrac{\lambda}{2}\right) + 0.35)
+\end{align}
+\begin{center}
+ (from equation (2))
+\end{center}
+
+$\Rightarrow$  phase difference :
+\begin{align}
+    \begin{split}
+        &= 2\pi \left(10t - 0.0080 \left(x+\dfrac{\lambda}{2} \right) + 0.35 \right) \\
+        &\quad - 2\pi \brak{10t - 0.0080x  +0.35}
+    \end{split}
+    \\
+    &= 2\pi \times 0.0080 \times \dfrac{\lambda}{2} \\
+    &= 2\pi \times 0.0080 \times \dfrac{125}{2}   \brak{\because \lambda=125} \\
+    &= \pi \text{radians}
+\end{align}
+    
+    \item phase of harmonic wave at $\left(x+\dfrac{3\lambda}{4} \right ) $:
+\begin{align}
+    = 2\pi \left(10t - 0.0080\left(x+3\times \dfrac{\lambda}{4}\right) + 0.35\right) 
+\end{align}
+\begin{center}
+ \brak{from equation \brak{2}}
+\end{center}
+
+$\Rightarrow$  phase difference :
+\begin{align}
+    \begin{split}
+        &= 2\pi\left(10t - 0.0080\left(x+3 \times \dfrac{\lambda}{4}\right) + 0.35\right) \\
+        &\quad - 2\pi \brak{10t - 0.0080x  +0.35}
+    \end{split}
+    \\
+    &= 2\pi \times 0.0080 \times 3 \times \dfrac{\lambda}{4} \\
+    &= 2\pi \times 0.0080 \times 3 \times \dfrac{125}{4} \brak{\because\lambda=125} \\
+    &= \dfrac{3\pi}{2} \text{radians}
+\end{align}
+
+\end{enumerate}
+
+\end{document}
