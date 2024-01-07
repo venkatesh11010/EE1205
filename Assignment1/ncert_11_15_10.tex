@@ -60,7 +60,7 @@
 
 \parindent 0px
 \textbf{Question:} For the travelling harmonic wave
-y\brak {x, t} = 2.0 cos 2$\pi$ \brak{10t - 0.0080 x + 0.35} where x and y are in cm and t in s. Calculate the phase difference between oscillatory
+$y\brak {x, t} = 2.0 cos 2\pi \brak{10t - 0.0080 x + 0.35}$ where x and y are in cm and t in s. Calculate the phase difference between oscillatory
 motion of two points separated by a distance of 
 
 \begin{enumerate} [label=(\alph*)]
@@ -73,7 +73,7 @@ motion of two points separated by a distance of
 \textbf{Solution:}  
 \begin{table}[htbp] \small
 \centering
-\input{table.tex}
+\input{tables/table}
 \end{table}
 Harmonic wave :
 \begin{equation}
@@ -88,86 +88,46 @@ Phase of harmonic wave (at x):
     k &= 2\pi(0.008) \label{} \\
     \because k &= \dfrac{2\pi}{\lambda} \\
     \lambda &= \dfrac{2\pi}{k} \\
-    \lambda &= \dfrac{2\pi}{2 \pi \times 0.008} \\
+    \lambda &= \dfrac{2\pi}{2 \pi \times 0.008}\nonumber \\
     \lambda &= 125 \text{cm}
+\end{align}
+\begin{align}
+    \text{Phase difference} &= \theta_1 - \theta_2 \\
+    &= \brak{kx_1 + \omega t + \phi} - \brak{kx_2 + \omega t + \phi}\\
+    &= k\brak{x_1 - x_2} \label{equation for phase difference}
 \end{align}
 
 \begin{enumerate} [label=(\alph*)]
-    \item  phase of harmonic wave at (x+400cm) :
+   \item
+$\because \brak{x_1 - x_2} = 400\, cm$ 
 \begin{align}
-    = 2\pi \brak{10t - 0.0080(x+400) + 0.35} 
-\end{align}
-\begin{center}
- \brak{from equation \brak{2}}
-\end{center}
-
-$\Rightarrow$  phase difference :
-\begin{align}
-    \begin{split}
-        &= 2\pi \brak{10t - 0.0080\brak{x+400} + 0.35} \\
-        &\quad - 2\pi\brak{10t - 0.0080x + 0.35}
-    \end{split}
-     \\
-    &= 2\pi \times 0.0080 \times 400\\
+    \text{phase difference} &= k\brak{x_1 - x_2} \tag{\ref{equation for phase difference}} \nonumber\\
+    &= 2\pi \times 0.0080 \times 400 \nonumber\\
     &= 6.4 \pi\, \text{radians}
 \end{align}
 
-   \item phase of harmonic wave at \brak{x+50cm} :
+   \item 
+$\because \brak{x_1 - x_2} = 50\, cm$ 
 \begin{align}
-    = 2\pi \brak{10t - 0.0080\brak{x+50} + 0.35}
-\end{align}
-\begin{center}
- \brak{from equation \brak{2}}
-\end{center}
-
-$\Rightarrow$  phase difference :
-\begin{align}
-    \begin{split}
-        &= 2\pi\brak{10t - 0.0080\brak{x+50} + 0.35} \\
-        &\quad - 2\pi \brak{10t - 0.0080x  +0.35} 
-    \end{split}
-    \\
-    &= 2\pi \times 0.0080 \times 50\\
+    \text{phase difference} &= k\brak{x_1 - x_2} \tag{\ref{equation for phase difference}} \nonumber\\
+    &= 2\pi \times 0.0080 \times 50 \nonumber\\
     &= 0.8\pi \, \text{radians}
 \end{align}
 
-    \item phase of harmonic wave at $ \left (x+\dfrac{\lambda}{2}\right) $:
+    \item $\because \brak{x_1 - x_2} = \dfrac{\lambda}{2}\, cm$ 
 \begin{align}
-    = 2\pi(10t - 0.0080 \left(x+\dfrac{\lambda}{2}\right) + 0.35)
-\end{align}
-\begin{center}
- (from equation (2))
-\end{center}
-
-$\Rightarrow$  phase difference :
-\begin{align}
-    \begin{split}
-        &= 2\pi \left(10t - 0.0080 \left(x+\dfrac{\lambda}{2} \right) + 0.35 \right) \\
-        &\quad - 2\pi \brak{10t - 0.0080x  +0.35}
-    \end{split}
-    \\
+    \text{phase difference} &= k\brak{x_1 - x_2} \tag{\ref{equation for phase difference}} \nonumber\\
     &= 2\pi \times 0.0080 \times \dfrac{\lambda}{2} \\
-    &= 2\pi \times 0.0080 \times \dfrac{125}{2}   \brak{\because \lambda=125} \\
+    &= 2\pi \times 0.0080 \times \dfrac{125}{2} 
+    \brak{\because \lambda=125} \nonumber \\
     &= \pi \text{radians}
 \end{align}
     
-    \item phase of harmonic wave at $\left(x+\dfrac{3\lambda}{4} \right ) $:
+    \item $\because \brak{x_1 - x_2} = \dfrac{3\lambda}{4}\, cm$ 
 \begin{align}
-    = 2\pi \left(10t - 0.0080\left(x+3\times \dfrac{\lambda}{4}\right) + 0.35\right) 
-\end{align}
-\begin{center}
- \brak{from equation \brak{2}}
-\end{center}
-
-$\Rightarrow$  phase difference :
-\begin{align}
-    \begin{split}
-        &= 2\pi\left(10t - 0.0080\left(x+3 \times \dfrac{\lambda}{4}\right) + 0.35\right) \\
-        &\quad - 2\pi \brak{10t - 0.0080x  +0.35}
-    \end{split}
-    \\
+    \text{phase difference} &= k\brak{x_1 - x_2} \tag{\ref{equation for phase difference}} \nonumber\\
     &= 2\pi \times 0.0080 \times 3 \times \dfrac{\lambda}{4} \\
-    &= 2\pi \times 0.0080 \times 3 \times \dfrac{125}{4} \brak{\because\lambda=125} \\
+    &= 2\pi \times 0.0080 \times 3 \times \dfrac{125}{4}  \brak{\because\lambda=125} \nonumber\\
     &= \dfrac{3\pi}{2} \text{radians}
 \end{align}
 
