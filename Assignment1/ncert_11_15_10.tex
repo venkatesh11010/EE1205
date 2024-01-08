@@ -60,7 +60,7 @@
 
 \parindent 0px
 \textbf{Question:} For the travelling harmonic wave
-$y\brak {x, t} = 2.0 cos 2\pi \brak{10t - 0.0080 x + 0.35}$ where x and y are in cm and t in s. Calculate the phase difference between oscillatory
+$y\brak {x, t} = 2.0 cos 2\pi \brak{10t - 0.0080 x + 0.35}$ where $x$ and $y$ are in cm and t in s. Calculate the phase difference between oscillatory
 motion of two points separated by a distance of 
 
 \begin{enumerate} [label=(\alph*)]
@@ -73,64 +73,29 @@ motion of two points separated by a distance of
 \textbf{Solution:}  
 \begin{table}[htbp] \small
 \centering
-\input{tables/table}
+\input{tables/table1}
 \end{table}
-Harmonic wave :
+
+ General form of harmonic wave :
+\begin{equation}
+    y\brak{x, t} = A \cos \brak{2\pi f t - k x + \phi}
+\end{equation}
 \begin{equation}
     y\brak{x, t} = 2.0 \cos 2\pi \brak{10t - 0.0080 x + 0.35}
 \end{equation}
-
-Phase of harmonic wave (at x):
+Phase of harmonic wave \brak{\text{at}\, x}:
 \begin{equation}
-    = 2\pi \brak{10t - 0.0080x + 0.35}
+    = \brak{2\pi f t - k x + \phi}
 \end{equation}
 \begin{align}
-    k &= 2\pi(0.008) \label{} \\
-    \because k &= \dfrac{2\pi}{\lambda} \\
-    \lambda &= \dfrac{2\pi}{k} \\
-    \lambda &= \dfrac{2\pi}{2 \pi \times 0.008}\nonumber \\
-    \lambda &= 125 \text{cm}
-\end{align}
-\begin{align}
-    \text{Phase difference} &= \theta_1 - \theta_2 \\
-    &= \brak{kx_1 + \omega t + \phi} - \brak{kx_2 + \omega t + \phi}\\
-    &= k\brak{x_1 - x_2} \label{equation for phase difference}
+    \text{Phase difference} \brak{\Delta \theta}&= \theta_1 - \theta_2 \\
+    &= \brak{ 2\pi f t - kx_1 + \phi} - \brak{2\pi f t -kx_2 + \phi}\\
+    &= k\brak{x_2 - x_1} \label{equation for phase difference}
 \end{align}
 
-\begin{enumerate} [label=(\alph*)]
-   \item
-$\because \brak{x_1 - x_2} = 400\, cm$ 
-\begin{align}
-    \text{phase difference} &= k\brak{x_1 - x_2} \tag{\ref{equation for phase difference}} \nonumber\\
-    &= 2\pi \times 0.0080 \times 400 \nonumber\\
-    &= 6.4 \pi\, \text{radians}
-\end{align}
-
-   \item 
-$\because \brak{x_1 - x_2} = 50\, cm$ 
-\begin{align}
-    \text{phase difference} &= k\brak{x_1 - x_2} \tag{\ref{equation for phase difference}} \nonumber\\
-    &= 2\pi \times 0.0080 \times 50 \nonumber\\
-    &= 0.8\pi \, \text{radians}
-\end{align}
-
-    \item $\because \brak{x_1 - x_2} = \dfrac{\lambda}{2}\, cm$ 
-\begin{align}
-    \text{phase difference} &= k\brak{x_1 - x_2} \tag{\ref{equation for phase difference}} \nonumber\\
-    &= 2\pi \times 0.0080 \times \dfrac{\lambda}{2} \\
-    &= 2\pi \times 0.0080 \times \dfrac{125}{2} 
-    \brak{\because \lambda=125} \nonumber \\
-    &= \pi \text{radians}
-\end{align}
-    
-    \item $\because \brak{x_1 - x_2} = \dfrac{3\lambda}{4}\, cm$ 
-\begin{align}
-    \text{phase difference} &= k\brak{x_1 - x_2} \tag{\ref{equation for phase difference}} \nonumber\\
-    &= 2\pi \times 0.0080 \times 3 \times \dfrac{\lambda}{4} \\
-    &= 2\pi \times 0.0080 \times 3 \times \dfrac{125}{4}  \brak{\because\lambda=125} \nonumber\\
-    &= \dfrac{3\pi}{2} \text{radians}
-\end{align}
-
-\end{enumerate}
+\begin{table}[htbp] \small
+\centering
+\input{tables/table2}
+\end{table}
 
 \end{document}
