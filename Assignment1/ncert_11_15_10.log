@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.1.2)  9 JAN 2024 07:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.1.2)  11 JAN 2024 05:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1069,11 +1069,47 @@ Package: inputenc 2021/02/14 v1.3d Input encoding file
 (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
 File: latin1.def 2021/02/14 v1.3d Input encoding file
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2022/03/01 v3.6b Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
+\caption@tempdima=\dimen324
+\captionmargin=\dimen325
+\caption@leftmargin=\dimen326
+\caption@rightmargin=\dimen327
+\caption@width=\dimen328
+\caption@indent=\dimen329
+\caption@parindent=\dimen330
+\caption@hangindent=\dimen331
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+Package caption Info: \@makecaption = \long macro:#1#2->\ifx \@captype \@IEEEta
+blestring \footnotesize \bgroup \par \centering \@IEEEtabletopskipstrut {\norma
+lfont \footnotesize #1}\\{\normalfont \footnotesize \scshape #2}\par \addvspace
+ {0.5\baselineskip }\egroup \@IEEEtablecaptionsepspace \else \@IEEEfigurecaptio
+nsepspace \setbox \@tempboxa \hbox {\normalfont \footnotesize {#1.}\nobreakspac
+e \nobreakspace #2}\ifdim \wd \@tempboxa >\hsize \setbox \@tempboxa \hbox {\nor
+malfont \footnotesize {#1.}\nobreakspace \nobreakspace }\parbox [t]{\hsize }{\n
+ormalfont \footnotesize \noindent \unhbox \@tempboxa #2}\else \ifCLASSOPTIONcon
+ference \hbox to\hsize {\normalfont \footnotesize \hfil \box \@tempboxa \hfil }
+\else \hbox to\hsize {\normalfont \footnotesize \box \@tempboxa \hfil }\fi \fi 
+\fi  on input line 1176.
+)
+
+Package caption Warning: Unknown document class (or package),
+(caption)                standard defaults will be used.
+See the caption package documentation for explanation.
+
+\c@caption@flags=\count334
+\c@continuedfloat=\count335
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
-\col@sep=\dimen324
+\col@sep=\dimen332
 \ar@mcellbox=\box76
-\extrarowheight=\dimen325
+\extrarowheight=\dimen333
 \NC@list=\toks46
 \extratabsurround=\skip65
 \backup@length=\skip66
@@ -1085,25 +1121,25 @@ Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 \LTright=\skip68
 \LTpre=\skip69
 \LTpost=\skip70
-\LTchunksize=\count334
-\LTcapwidth=\dimen326
+\LTchunksize=\count336
+\LTcapwidth=\dimen334
 \LT@head=\box78
 \LT@firsthead=\box79
 \LT@foot=\box80
 \LT@lastfoot=\box81
 \LT@gbox=\box82
-\LT@cols=\count335
-\LT@rows=\count336
-\c@LT@tables=\count337
-\c@LT@chunks=\count338
+\LT@cols=\count337
+\LT@rows=\count338
+\c@LT@tables=\count339
+\c@LT@chunks=\count340
 \LT@p@ftn=\toks47
 )
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip71
-\multirow@cntb=\count339
+\multirow@cntb=\count341
 \multirow@dima=\skip72
-\bigstrutjot=\dimen327
+\bigstrutjot=\dimen335
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/hhline.sty
 Package: hhline 2020/01/04 v2.04 Table rule package (DPC)
@@ -1111,12 +1147,12 @@ Package: hhline 2020/01/04 v2.04 Table rule package (DPC)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
-\c@theorem=\count340
-\c@problem=\count341
-\c@proposition=\count342
-\c@lemma=\count343
-\c@example=\count344
-\c@rem=\count345
+\c@theorem=\count342
+\c@problem=\count343
+\c@proposition=\count344
+\c@lemma=\count345
+\c@example=\count346
+\c@rem=\count347
 LaTeX Font Info:    Trying to load font information for OT1+txr on input line 4
 4.
 
@@ -1208,16 +1244,16 @@ LaTeX Font Info:    Font shape `OT1/txr/b/it' in size <24> not available
 -- Lines per column: 50 (exact).
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count346
-\scratchdimen=\dimen328
+\scratchcounter=\count348
+\scratchdimen=\dimen336
 \scratchbox=\box83
-\nofMPsegments=\count347
-\nofMParguments=\count348
+\nofMPsegments=\count349
+\nofMParguments=\count350
 \everyMPshowfont=\toks48
-\MPscratchCnt=\count349
-\MPscratchDim=\dimen329
-\MPnumerator=\count350
-\makeMPintoPDFobject=\count351
+\MPscratchCnt=\count351
+\MPscratchDim=\dimen337
+\MPnumerator=\count352
+\makeMPintoPDFobject=\count353
 \everyMPtoPDFconversion=\toks49
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1228,7 +1264,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count352
+\c@lstlisting=\count354
 \symgns@font=\mathgroup10
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
 (Font)                  TS1/txr/m/n --> TS1/txr/b/n on input line 44.
@@ -1246,6 +1282,13 @@ Package hyperref Info: Link coloring OFF on input line 44.
 \@outlinefile=\write5
 \openout5 = `ncert_11_15_10.out'.
 
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: longtable package is loaded.
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+)
+Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Calculating math sizes for size <14> on input line 53.
 LaTeX Font Info:    Trying to load font information for U+txsya on input line 5
 3.
@@ -1283,24 +1326,51 @@ e
  []
 
 (./tables/table1.tex)
-Overfull \hbox (40.5901pt too wide) in paragraph at lines 1--78
+Overfull \hbox (6.948pt too wide) in paragraph at lines 1--77
  [][] 
  []
 
-
-LaTeX Font Warning: Font shape `OT1/txr/m/scsl' undefined
-(Font)              using `OT1/txr/m/sl' instead on input line 78.
-
 (./tables/table2.tex)
+<figs/graph_1.png, id=7, 432.1746pt x 343.2825pt>
+File: figs/graph_1.png Graphic file (type png)
+<use figs/graph_1.png>
+Package pdftex.def Info: figs/graph_1.png  used on input line 97.
+(pdftex.def)             Requested size: 252.0pt x 200.1673pt.
 
-LaTeX Font Warning: Font shape `OT1/txr/m/scsl' undefined
-(Font)              using `OT1/txr/m/sl' instead on input line 92.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figs/graph_2.png, id=9, 432.1746pt x 343.2825pt>
+File: figs/graph_2.png Graphic file (type png)
+<use figs/graph_2.png>
+Package pdftex.def Info: figs/graph_2.png  used on input line 105.
+(pdftex.def)             Requested size: 252.0pt x 200.1673pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figs/graph_3.png, id=10, 432.1746pt x 343.2825pt>
+File: figs/graph_3.png Graphic file (type png)
+<use figs/graph_3.png>
+Package pdftex.def Info: figs/graph_3.png  used on input line 113.
+(pdftex.def)             Requested size: 252.0pt x 200.1673pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<figs/graph_4.png, id=11, 432.1746pt x 343.2825pt>
+File: figs/graph_4.png Graphic file (type png)
+<use figs/graph_4.png>
+Package pdftex.def Info: figs/graph_4.png  used on input line 123.
+(pdftex.def)             Requested size: 252.0pt x 200.1673pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
+ <./figs/graph_1.png> <./figs/graph_2.png>] [2
 
-] (./ncert_11_15_10.aux)
+ <./figs/graph_3.png> <./figs/graph_4.png>]
+(./ncert_11_15_10.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
@@ -1308,11 +1378,11 @@ Package rerunfilecheck Info: File `ncert_11_15_10.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 30407 strings out of 476091
- 598670 string characters out of 5794082
- 1877330 words of memory out of 5000000
- 50109 multiletter control sequences out of 15000+600000
- 595525 words of font info for 211 fonts, out of 8000000 for 9000
+ 31787 strings out of 476091
+ 625734 string characters out of 5794082
+ 1880330 words of memory out of 5000000
+ 51464 multiletter control sequences out of 15000+600000
+ 600583 words of font info for 224 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  101i,17n,96p,1182b,434s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
@@ -1323,10 +1393,10 @@ onts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/urw/times/utmri8a.pfb>
-Output written on ncert_11_15_10.pdf (1 page, 58676 bytes).
+Output written on ncert_11_15_10.pdf (2 pages, 196752 bytes).
 PDF statistics:
- 67 PDF objects out of 1000 (max. 8388607)
- 47 compressed objects within 1 object stream
- 10 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 85 PDF objects out of 1000 (max. 8388607)
+ 56 compressed objects within 1 object stream
+ 15 named destinations out of 1000 (max. 500000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
