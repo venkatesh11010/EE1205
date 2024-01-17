@@ -1,6 +1,14 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+path_diff = [400, 50, 62.5, 93.75]
+phase_diff = []
+
+for i in range(0, 4):
+    phase_diff.append(2*3.14*0.008*path_diff[i])
+    
+#print(phase_diff)
+
 # Define the function
 def equation(x):
     return 2 * np.cos(2 * np.pi * (-0.008 * x))
@@ -40,9 +48,6 @@ plt.text(200, -2.2, '  $400cm$ ', verticalalignment='bottom', horizontalalignmen
 
 plt.savefig('graph1.png', bbox_inches='tight', pad_inches=0.2)
 
-path_diff = 400
-phase_diff = path_diff * 2 * \pi * 0.008
-
 # Plot the second graph
 plt.figure(figsize=(8, 5))
 
@@ -71,10 +76,6 @@ plt.annotate('', xy=arrow_start, xytext=arrow_end,
 plt.text(145, -2.2, '  $50cm$ ', verticalalignment='bottom', horizontalalignment='right', color='purple')
 
 plt.savefig('graph2.png', bbox_inches='tight', pad_inches=0.2)
-
-path_diff = 50
-phase_diff = path_diff * 2 * \pi * 0.008
-
 
 # Plot the third graph
 plt.figure(figsize=(8, 5))
@@ -111,10 +112,6 @@ plt.text(40, -2, '$\\frac{\\lambda}{2}cm$', verticalalignment='bottom', horizont
 
 plt.savefig('graph3.png', bbox_inches='tight', pad_inches=0.2)
 
-path_diff = 62.5
-phase_diff = path_diff * 2 * \pi * 0.008
-
-
 # Plot the fourth graph
 plt.figure(figsize=(8, 5))
 
@@ -143,6 +140,3 @@ plt.annotate('', xy=arrow_start, xytext=arrow_end,
 plt.text(50, -2, '$\\dfrac{3\\lambda}{4}cm$', verticalalignment='bottom', horizontalalignment='right', color='purple')
 
 plt.savefig('graph4.png', bbox_inches='tight', pad_inches=0.2)
-
-path_diff = 93.75
-phase_diff = path_diff * 2 * \pi * 0.008
