@@ -90,43 +90,17 @@ Also find the sum of the first 15 terms in each case.
     \label{given parameters list}
     \end{table}
 
-    Z - Transformation of $a_n$ :
-    \begin{align}
-        \because X(z) &= \sum_{n = -\infty}^{\infty}x(n) \, z^{-n} \\
-         x(n)&= a_n\,u(n) \\
-        & = \sbrak{3+4n} \, u(n)
-    \end{align}
-
-    \[
-    \text{Here},\, u(n) =
-    \begin{cases}
-        0 & \text{for } n < 0 \\
-        1 & \text{for } n \geq 0 
-    \end{cases}
-    \]
-
     \begin{figure}[!h] 
     \centering
     \includegraphics[width=\columnwidth]{figs/signal_x1.png}
     \caption{}
     \label{fig:Graph1}
     \end{figure}
+     Z - Transformation of $a_n$ :
     \begin{align}
         \implies  X(z) &= \sum_{n = -\infty}^{\infty}[3 + 4n].u(n) \, z^{-n} \\
-        \implies X(z) &= 3 \sum_{n = 0}^{\infty} 1.z^{-n} + 4 \sum_{n = 0}^{\infty} 1.n.z^{-n}
-    \end{align}
-    \begin{align}
-        \text{Since,} \nonumber\\
-        &\sum_{n=0}^{\infty} r^n = \dfrac{1}{1-r}  \,\,\, 
-        ; |r|<1 \\
-        &\text{Differentiating w.r.t. 'r' and multiplying by 'r' }\nonumber \\
-        &\text{we get,} \nonumber \\
-        &\sum_{n=0}^{\infty} n.r^n = \dfrac{r}{(1-r)^2}
-    \end{align}
-
-    \begin{align}
-        &\text{Here}, r = z^{-1} \nonumber\\
-        &\implies X(z) = \dfrac{3}{1-z^{-1}} + \dfrac{4.z^{-1}}{(1-z^{-1})^2}\\
+        \implies X(z) &= 3 \sum_{n = 0}^{\infty} 1.z^{-n} + 4 \sum_{n = 0}^{\infty} 1.n.z^{-n} \\
+        \implies X(z) &= \dfrac{3}{1-z^{-1}} + \dfrac{4.z^{-1}}{(1-z^{-1})^2}\\
         &\{ Where, |z|>1\} \nonumber
     \end{align}
     
@@ -150,42 +124,16 @@ Also find the sum of the first 15 terms in each case.
     \label{given parameters list}
     \end{table}
 
-    Z - Transformation of $a_n$ :
-    \begin{align}
-        \because X(z) &= \sum_{n = -\infty}^{\infty}x(n) \, z^{-n} \\
-         x(n)&= a_n\,u(n) \\
-        & = \sbrak{9-5n} \, u(n)
-    \end{align}
-
-    \[
-    \text{Here},\, u(n) =
-    \begin{cases}
-        0 & \text{for } n < 0 \\
-        1 & \text{for } n \geq 0 
-    \end{cases}
-    \]
-
     \begin{figure}[!h] 
     \centering
     \includegraphics[width=\columnwidth]{figs/signal_x2.png}
     \caption{}
     \label{fig:Graph2}
     \end{figure}
+     Z - Transformation of $a_n$ :
     \begin{align}
         \implies  X(Z) &= \sum_{n = -\infty}^{\infty}[9 - 5n].u(n) \, z^{-n} \\
-        \implies X(z) &= 9 \sum_{n = 0}^{\infty} 1.z^{-n} - 5 \sum_{n = 0}^{\infty} 1.n.z^{-n}
-    \end{align}
-    \begin{align}
-        \text{Since,} \nonumber\\
-        &\sum_{n=0}^{\infty} r^n = \dfrac{1}{1-r}  \,\,\, 
-        ; |r|<1 \\
-        &\text{Differentiating w.r.t. 'r' and multiplying by 'r' }\nonumber \\
-        &\text{we get,} \nonumber \\
-        &\sum_{n=0}^{\infty} n.r^n = \dfrac{r}{(1-r)^2}
-    \end{align}
-
-    \begin{align}
-        &\text{Here}, r = z^{-1} \nonumber\\
+        \implies X(z) &= 9 \sum_{n = 0}^{\infty} 1.z^{-n} - 5 \sum_{n = 0}^{\infty} 1.n.z^{-n}\\
         &\implies X(z) = \dfrac{9}{1-z^{-1}} - \dfrac{5.z^{-1}}{(1-z^{-1})^2}\\
         &\{ Where, |z|>1\} \nonumber
     \end{align}
