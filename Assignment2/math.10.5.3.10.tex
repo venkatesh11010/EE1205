@@ -58,22 +58,21 @@
 \renewcommand{\thetable}{\theenumi}
 
 \parindent 0px
-\textbf{Question:} Show that $a_1$
-, $a_2$
-, . . ., $a_n$
+\textbf{Question:} Show that $x(0)$ , $x(1)$
+, $x(2)$
+, . . ., $x(n)$
 , . . . form an AP where an is defined as below :\\
-(i) $a_n$ = $3 + 4n$ \\ (ii) $a_n$ = $9 - 5n$ \\
+(i) $x(n)$ = $(3 + 4n)u(n)$ \\ (ii) $x(n)$ = $(9 - 5n)u(n)$ \\
 Also find the sum of the first 15 terms in each case.
 
 \vspace{0.5cm}
 \textbf{Answer:} 
 \begin{enumerate} [label=(\roman*)]
-    \item Given: $\,$ $a_n$ = $3 + 4n$ \\
-    we know that, The AP has constant common difference between two consecutive terms
+    \item We know that, The AP has constant common difference between two consecutive terms.
     \begin{align}
-        \therefore \text{common difference } (d) &= a_{n+1} - a_n \\
-        &= \brak{3+4(n+1)} \nonumber\\
-        & \,\,\, -\brak{3+4n} \nonumber\\
+        \therefore \text{common difference } (d) &= x(n+1) - x(n) \\
+        &= \brak{3+4\brak{n+1}} \nonumber\\
+        & u\brak{n+1} -\brak{3+4n}u\brak{n} \nonumber\\
         &= 4
     \end{align}
    $\because$ Given equation has common difference between any two consecutive terms is $4$ i.e. independent of '$n$'
@@ -85,7 +84,6 @@ Also find the sum of the first 15 terms in each case.
     \begin{table}[htbp] 
     \centering
     \input{tables/table1}
-    \vspace{0.2cm}
     \caption{\normalsize\textsl{Given \, parameters in $1^{st}$ AP}}
     \label{given parameters list}
     \end{table}
@@ -96,19 +94,20 @@ Also find the sum of the first 15 terms in each case.
     \caption{}
     \label{fig:Graph1}
     \end{figure}
-     Z - Transformation of $a_n$ :
+     Z - Transformation of $x(n)$ :
     \begin{align}
+        \implies X(z) &= \sum_{n = -\infty}^{\infty} x(n) z^{-n} \label{eq:z-transform}\\
         \implies  X(z) &= \sum_{n = -\infty}^{\infty}[3 + 4n].u(n) \, z^{-n} \\
         \implies X(z) &= 3 \sum_{n = 0}^{\infty} 1.z^{-n} + 4 \sum_{n = 0}^{\infty} 1.n.z^{-n} \\
         \implies X(z) &= \dfrac{3}{1-z^{-1}} + \dfrac{4.z^{-1}}{(1-z^{-1})^2}\\
         &\{ Where, |z|>1\} \nonumber
     \end{align}
     
-    \item Given: $\,$ $a_n$ = $9 - 5n$ \\
-    we know that, The AP has constant common difference between two consecutive terms
+    \item We know that, The AP has constant common difference between two consecutive terms.
     \begin{align}
-        \therefore \text{common difference } (d) &= a_{n+1} - a_n \\
-        &= \brak{9-5(n+1)} - \brak{9-5n} \nonumber\\
+        \therefore \text{common difference } (d) &= x(n+1) - x(n) \\
+        &= \brak{9-5(n+1)}u\brak{n+1} \nonumber\\
+        &- \brak{9-5n}u\brak{n} \nonumber\\
         &= -5
     \end{align}
    $\because$ Given equation has common difference between any two consecutive terms is $-5$ i.e. independent of '$n$'
@@ -119,7 +118,6 @@ Also find the sum of the first 15 terms in each case.
     \begin{table}[htbp] 
     \centering
     \input{tables/table2}
-    \vspace{0.2cm}
     \caption{\normalsize\textsl{Given \, parameters in $2^{st}$ AP}}
     \label{given parameters list}
     \end{table}
@@ -130,8 +128,11 @@ Also find the sum of the first 15 terms in each case.
     \caption{}
     \label{fig:Graph2}
     \end{figure}
-     Z - Transformation of $a_n$ :
+
+     Z - Transformation of $x(n)$ :
+     %From equation \eqref{eq:z-transform}:
     \begin{align}
+         \implies X(z) &= \sum_{n = -\infty}^{\infty} x(n) z^{-n}\\
         \implies  X(Z) &= \sum_{n = -\infty}^{\infty}[9 - 5n].u(n) \, z^{-n} \\
         \implies X(z) &= 9 \sum_{n = 0}^{\infty} 1.z^{-n} - 5 \sum_{n = 0}^{\infty} 1.n.z^{-n}\\
         \implies X(z) &= \dfrac{9}{1-z^{-1}} - \dfrac{5.z^{-1}}{(1-z^{-1})^2}\\
