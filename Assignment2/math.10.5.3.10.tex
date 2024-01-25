@@ -79,8 +79,6 @@ Also find the sum of the first 15 terms in each case.
    \begin{center}
        Hence given sequence is in AP.
    \end{center}
-   \vspace{0.3cm}
-
     \begin{table}[htbp] 
     \centering
     \input{tables/table1}
@@ -88,20 +86,34 @@ Also find the sum of the first 15 terms in each case.
     \label{given parameters list}
     \end{table}
 
+    \begin{align}
+         X(z) &= \sum_{n = -\infty}^{\infty} x(n) z^{-n} \label{eq:z-transform}\\
+        \implies  X(z) &= \sum_{n = -\infty}^{\infty}[3 + 4n].u(n) \, z^{-n} \\
+        nu(n) &\system{Z} -z.U'(z)\\
+        \implies X(z) &= \dfrac{3}{1-z^{-1}} + \dfrac{4.z^{-1}}{(1-z^{-1})^2} ; |z|>1\\
+        \because y(n) &= x(n) * u(n)\\
+        y(n) &\system{Z} Y(z) \nonumber\\
+        \implies Y(z) &= \left[ \dfrac{3}{1-z^{-1}} + \dfrac{4 z^{-1}}{\left(1-z^{-1}\right)^2} \right].\dfrac{1}{1-z^{-1}}
+    \end{align}
+    Using contour integeration for inverse Z transformation,\\
+    \begin{align}
+        y(14) &= \dfrac{1}{2\pi j}\int Y(z) z^{13} dz \\
+        y(14) &= \dfrac{1}{2\pi j}\int \dfrac{3.z^{15}}{(z-1)^{2}} dz + \dfrac{1}{2\pi j}\int \dfrac{4.z^{15}}{(z-1)^{3}} dz\\
+        \implies R&=\dfrac{1}{\brak {m-1}!}\lim\limits_{z\to a}\dfrac{d^{m-1}}{dz^{m-1}}\brak {{(z-a)}^{m}f\brak z}\\
+        \implies R_1 &=\dfrac{1}{1!}\lim\limits_{z\to 1}\dfrac{d}{dz}\brak {(z-1)^2.\dfrac{3.z^{15}}{(z-1)^{2}}}\\
+        R_1 &= 45\\
+        \implies R_2 &=\dfrac{1}{2!}\lim\limits_{z\to 1}\dfrac{d^2}{dz^2}\brak {(z-1)^3.\dfrac{4.z^{15}}{(z-1)^{3}}}\\
+        R_2 &= 420\\
+        \implies y(14) &= R_1 + R_2 \nonumber\\
+        &= 465
+    \end{align}
+    
     \begin{figure}[!h] 
     \centering
     \includegraphics[width=\columnwidth]{figs/signal_x1.png}
     \caption{}
     \label{fig:Graph1}
     \end{figure}
-     Z - Transformation of $x(n)$ :
-    \begin{align}
-        \implies X(z) &= \sum_{n = -\infty}^{\infty} x(n) z^{-n} \label{eq:z-transform}\\
-        \implies  X(z) &= \sum_{n = -\infty}^{\infty}[3 + 4n].u(n) \, z^{-n} \\
-        \implies X(z) &= 3 \sum_{n = 0}^{\infty} 1.z^{-n} + 4 \sum_{n = 0}^{\infty} 1.n.z^{-n} \\
-        \implies X(z) &= \dfrac{3}{1-z^{-1}} + \dfrac{4.z^{-1}}{(1-z^{-1})^2}\\
-        &\{ Where, |z|>1\} \nonumber
-    \end{align}
     
     \item We know that, The AP has constant common difference between two consecutive terms.
     \begin{align}
@@ -122,22 +134,34 @@ Also find the sum of the first 15 terms in each case.
     \label{given parameters list}
     \end{table}
 
+    \begin{align}
+         X(z) &= \sum_{n = -\infty}^{\infty} x(n) z^{-n} \label{eq:z-transform}\\
+        \implies  X(z) &= \sum_{n = -\infty}^{\infty}[9 - 5n].u(n) \, z^{-n} \\
+        nu(n) &\system{Z} -z.U'(z)\\
+        \implies X(z) &= \dfrac{9}{1-z^{-1}} - \dfrac{5.z^{-1}}{(1-z^{-1})^2} ; |z|>1\\
+        \because y(n) &= x(n) * u(n)\\
+        y(n) &\system{Z} Y(z) \nonumber\\
+        \implies Y(z) &= \left[ \dfrac{9}{1-z^{-1}} - \dfrac{5 z^{-1}}{\left(1-z^{-1}\right)^2} \right].\dfrac{1}{1-z^{-1}}
+    \end{align}
+    Using contour integeration for inverse Z transformation,\\
+    \begin{align}
+        y(14) &= \dfrac{1}{2\pi j}\int Y(z) z^{13} dz \\
+        y(14) &= \dfrac{1}{2\pi j}\int \dfrac{9.z^{15}}{(z-1)^{2}} dz - \dfrac{1}{2\pi j}\int \dfrac{5.z^{15}}{(z-1)^{3}} dz\\
+        \implies R&=\dfrac{1}{\brak {m-1}!}\lim\limits_{z\to a}\dfrac{d^{m-1}}{dz^{m-1}}\brak {{(z-a)}^{m}f\brak z}\\
+        \implies R_1 &=\dfrac{1}{1!}\lim\limits_{z\to 1}\dfrac{d}{dz}\brak {(z-1)^2.\dfrac{9.z^{15}}{(z-1)^{2}}}\\
+        R_1 &= 135\\
+        \implies R_2 &=\dfrac{1}{2!}\lim\limits_{z\to 1}\dfrac{d^2}{dz^2}\brak {(z-1)^3.\dfrac{5.z^{15}}{(z-1)^{3}}}\\
+        R_2 &= 525\\
+        \implies y(14) &= R_1 - R_2 \nonumber\\
+        &= -390
+    \end{align}
+    
     \begin{figure}[!h] 
     \centering
     \includegraphics[width=\columnwidth]{figs/signal_x2.png}
     \caption{}
     \label{fig:Graph2}
     \end{figure}
-
-     Z - Transformation of $x(n)$ :
-     %From equation \eqref{eq:z-transform}:
-    \begin{align}
-         \implies X(z) &= \sum_{n = -\infty}^{\infty} x(n) z^{-n}\\
-        \implies  X(Z) &= \sum_{n = -\infty}^{\infty}[9 - 5n].u(n) \, z^{-n} \\
-        \implies X(z) &= 9 \sum_{n = 0}^{\infty} 1.z^{-n} - 5 \sum_{n = 0}^{\infty} 1.n.z^{-n}\\
-        \implies X(z) &= \dfrac{9}{1-z^{-1}} - \dfrac{5.z^{-1}}{(1-z^{-1})^2}\\
-        &\{ Where, |z|>1\} \nonumber
-    \end{align}
 
 \end{enumerate}
 
