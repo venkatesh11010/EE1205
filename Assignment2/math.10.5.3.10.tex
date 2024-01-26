@@ -58,11 +58,13 @@
 \renewcommand{\thetable}{\theenumi}
 
 \parindent 0px
-\textbf{Question:} Show that $x(0)$ , $x(1)$
-, $x(2)$
-, . . ., $x(n)$
-, . . . form an AP where an is defined as below :\\
-(i) $x(n)$ = $(3 + 4n)u(n)$ \\ (ii) $x(n)$ = $(9 - 5n)u(n)$ \\
+\textbf{Question:} Show that $a_0$ , $a_1$ , $a_2$
+, . . ., $a_n$
+, . . . form an AP where an is defined as below :
+\begin{enumerate}
+    \item $a_n$ = $(3 + 4n)$ 
+    \item $a_n$ = $(9 - 5n)$ 
+\end{enumerate}
 Also find the sum of the first 15 terms in each case.
 
 \vspace{0.5cm}
@@ -70,15 +72,13 @@ Also find the sum of the first 15 terms in each case.
 \begin{enumerate} [label=(\roman*)]
     \item We know that, The AP has constant common difference between two consecutive terms.
     \begin{align}
-        \therefore \text{common difference } (d) &= x(n+1) - x(n) \\
+        \therefore \text{common difference } (d) &= a_{n+1} - a_n \\
         &= \brak{3+4\brak{n+1}} \nonumber\\
         & u\brak{n+1} -\brak{3+4n}u\brak{n} \nonumber\\
         &= 4
     \end{align}
-   $\because$ Given equation has common difference between any two consecutive terms is $4$ i.e. independent of '$n$'
-   \begin{center}
-       Hence given sequence is in AP.
-   \end{center}
+   $\because$ Given equation has common difference between any two consecutive terms is $4$ i.e. independent of '$n$'\\
+    Hence given sequence is in AP.
     \begin{table}[htbp] 
     \centering
     \input{tables/table1}
@@ -90,19 +90,19 @@ Also find the sum of the first 15 terms in each case.
          X(z) &= \sum_{n = -\infty}^{\infty} x(n) z^{-n} \label{eq:z-transform}\\
         \implies  X(z) &= \sum_{n = -\infty}^{\infty}[3 + 4n].u(n) \, z^{-n} \\
         nu(n) &\system{Z} -z.U'(z)\\
-        \implies X(z) &= \dfrac{3}{1-z^{-1}} + \dfrac{4.z^{-1}}{(1-z^{-1})^2} ; |z|>1\\
+        \implies X(z) &= \frac{3}{1-z^{-1}} + \frac{4.z^{-1}}{(1-z^{-1})^2} ; |z|>1\\
         \because y(n) &= x(n) * u(n)\\
         y(n) &\system{Z} Y(z) \nonumber\\
-        \implies Y(z) &= \left[ \dfrac{3}{1-z^{-1}} + \dfrac{4 z^{-1}}{\left(1-z^{-1}\right)^2} \right].\dfrac{1}{1-z^{-1}}
+        \implies Y(z) &= \left[ \frac{3}{1-z^{-1}} + \frac{4 z^{-1}}{\left(1-z^{-1}\right)^2} \right].\frac{1}{1-z^{-1}}
     \end{align}
     Using contour integeration for inverse Z transformation,\\
     \begin{align}
-        y(14) &= \dfrac{1}{2\pi j}\int Y(z) z^{13} dz \\
-        y(14) &= \dfrac{1}{2\pi j}\int \dfrac{3.z^{15}}{(z-1)^{2}} dz + \dfrac{1}{2\pi j}\int \dfrac{4.z^{15}}{(z-1)^{3}} dz\\
-        \implies R&=\dfrac{1}{\brak {m-1}!}\lim\limits_{z\to a}\dfrac{d^{m-1}}{dz^{m-1}}\brak {{(z-a)}^{m}f\brak z}\\
-        \implies R_1 &=\dfrac{1}{1!}\lim\limits_{z\to 1}\dfrac{d}{dz}\brak {(z-1)^2.\dfrac{3.z^{15}}{(z-1)^{2}}}\\
+        y(14) &= \frac{1}{2\pi j}\int Y(z) z^{13} dz \\
+        y(14) &= \frac{1}{2\pi j}\int \frac{3.z^{15}}{(z-1)^{2}} dz + \frac{1}{2\pi j}\int \frac{4.z^{15}}{(z-1)^{3}} dz\\
+        \because R&=\frac{1}{\brak {m-1}!}\lim\limits_{z\to a}\frac{d^{m-1}}{dz^{m-1}}\brak {{(z-a)}^{m}f\brak z}\\
+        R_1 &=\frac{1}{1!}\lim\limits_{z\to 1}\frac{d}{dz}\brak {(z-1)^2.\frac{3.z^{15}}{(z-1)^{2}}}\\
         R_1 &= 45\\
-        \implies R_2 &=\dfrac{1}{2!}\lim\limits_{z\to 1}\dfrac{d^2}{dz^2}\brak {(z-1)^3.\dfrac{4.z^{15}}{(z-1)^{3}}}\\
+        R_2 &=\frac{1}{2!}\lim\limits_{z\to 1}\frac{d^2}{dz^2}\brak {(z-1)^3.\frac{4.z^{15}}{(z-1)^{3}}}\\
         R_2 &= 420\\
         \implies y(14) &= R_1 + R_2 \nonumber\\
         &= 465
@@ -111,13 +111,13 @@ Also find the sum of the first 15 terms in each case.
     \begin{figure}[!h] 
     \centering
     \includegraphics[width=\columnwidth]{figs/signal_x1.png}
-    \caption{}
+    \caption{$x_1(n)=(3+4n)u(n)$}
     \label{fig:Graph1}
     \end{figure}
     
     \item We know that, The AP has constant common difference between two consecutive terms.
     \begin{align}
-        \therefore \text{common difference } (d) &= x(n+1) - x(n) \\
+        \therefore \text{common difference } (d) &= a_{n+1} - a_n  \\
         &= \brak{9-5(n+1)}u\brak{n+1} \nonumber\\
         &- \brak{9-5n}u\brak{n} \nonumber\\
         &= -5
@@ -138,19 +138,19 @@ Also find the sum of the first 15 terms in each case.
          X(z) &= \sum_{n = -\infty}^{\infty} x(n) z^{-n} \label{eq:z-transform}\\
         \implies  X(z) &= \sum_{n = -\infty}^{\infty}[9 - 5n].u(n) \, z^{-n} \\
         nu(n) &\system{Z} -z.U'(z)\\
-        \implies X(z) &= \dfrac{9}{1-z^{-1}} - \dfrac{5.z^{-1}}{(1-z^{-1})^2} ; |z|>1\\
+        \implies X(z) &= \frac{9}{1-z^{-1}} - \frac{5.z^{-1}}{(1-z^{-1})^2} ; |z|>1\\
         \because y(n) &= x(n) * u(n)\\
         y(n) &\system{Z} Y(z) \nonumber\\
-        \implies Y(z) &= \left[ \dfrac{9}{1-z^{-1}} - \dfrac{5 z^{-1}}{\left(1-z^{-1}\right)^2} \right].\dfrac{1}{1-z^{-1}}
+        \implies Y(z) &= \left[ \frac{9}{1-z^{-1}} - \frac{5 z^{-1}}{\left(1-z^{-1}\right)^2} \right].\frac{1}{1-z^{-1}}
     \end{align}
     Using contour integeration for inverse Z transformation,\\
     \begin{align}
-        y(14) &= \dfrac{1}{2\pi j}\int Y(z) z^{13} dz \\
-        y(14) &= \dfrac{1}{2\pi j}\int \dfrac{9.z^{15}}{(z-1)^{2}} dz - \dfrac{1}{2\pi j}\int \dfrac{5.z^{15}}{(z-1)^{3}} dz\\
-        \implies R&=\dfrac{1}{\brak {m-1}!}\lim\limits_{z\to a}\dfrac{d^{m-1}}{dz^{m-1}}\brak {{(z-a)}^{m}f\brak z}\\
-        \implies R_1 &=\dfrac{1}{1!}\lim\limits_{z\to 1}\dfrac{d}{dz}\brak {(z-1)^2.\dfrac{9.z^{15}}{(z-1)^{2}}}\\
+        y(14) &= \frac{1}{2\pi j}\int Y(z) z^{13} dz \\
+        y(14) &= \frac{1}{2\pi j}\int \frac{9.z^{15}}{(z-1)^{2}} dz - \frac{1}{2\pi j}\int \frac{5.z^{15}}{(z-1)^{3}} dz\\
+        \because R&=\frac{1}{\brak {m-1}!}\lim\limits_{z\to a}\frac{d^{m-1}}{dz^{m-1}}\brak {{(z-a)}^{m}f\brak z}\\
+        R_1 &=\frac{1}{1!}\lim\limits_{z\to 1}\frac{d}{dz}\brak {(z-1)^2.\frac{9.z^{15}}{(z-1)^{2}}}\\
         R_1 &= 135\\
-        \implies R_2 &=\dfrac{1}{2!}\lim\limits_{z\to 1}\dfrac{d^2}{dz^2}\brak {(z-1)^3.\dfrac{5.z^{15}}{(z-1)^{3}}}\\
+        R_2 &=\frac{1}{2!}\lim\limits_{z\to 1}\frac{d^2}{dz^2}\brak {(z-1)^3.\frac{5.z^{15}}{(z-1)^{3}}}\\
         R_2 &= 525\\
         \implies y(14) &= R_1 - R_2 \nonumber\\
         &= -390
@@ -159,7 +159,7 @@ Also find the sum of the first 15 terms in each case.
     \begin{figure}[!h] 
     \centering
     \includegraphics[width=\columnwidth]{figs/signal_x2.png}
-    \caption{}
+    \caption{$x_2(n)=(9-5n)u(n)$}
     \label{fig:Graph2}
     \end{figure}
 

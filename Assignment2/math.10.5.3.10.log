@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.1.2)  25 JAN 2024 16:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.1.2)  26 JAN 2024 09:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1167,6 +1167,9 @@ File: ot1txr.fd 2000/12/15 v3.1
 
 LaTeX Warning: Label `given parameters list' multiply defined.
 
+
+LaTeX Warning: Label `eq:z-transform' multiply defined.
+
 )
 \openout1 = `math.10.5.3.10.aux'.
 
@@ -1322,7 +1325,7 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 5
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
-Overfull \hbox (12.31308pt too wide) detected at line 77
+Overfull \hbox (12.31308pt too wide) detected at line 79
 []
  []
 
@@ -1373,7 +1376,7 @@ Overfull \hbox (24.88728pt too wide) detected at line 157
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<figs/signal_x2.png, id=43, 462.528pt x 346.896pt>
+<figs/signal_x2.png, id=45, 462.528pt x 346.896pt>
 File: figs/signal_x2.png Graphic file (type png)
 <use figs/signal_x2.png>
 Package pdftex.def Info: figs/signal_x2.png  used on input line 161.
@@ -1386,13 +1389,13 @@ Package rerunfilecheck Info: File `math.10.5.3.10.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 31784 strings out of 476091
- 625720 string characters out of 5794082
- 1891330 words of memory out of 5000000
+ 31790 strings out of 476091
+ 625756 string characters out of 5794082
+ 1892330 words of memory out of 5000000
  51447 multiletter control sequences out of 15000+600000
- 591457 words of font info for 205 fonts, out of 8000000 for 9000
+ 594149 words of font info for 209 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 101i,12n,96p,1182b,580s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,11n,96p,1182b,580s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
@@ -1402,10 +1405,10 @@ fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/times/utmri8a.pfb>
-Output written on math.10.5.3.10.pdf (2 pages, 99659 bytes).
+Output written on math.10.5.3.10.pdf (2 pages, 99997 bytes).
 PDF statistics:
- 118 PDF objects out of 1000 (max. 8388607)
- 91 compressed objects within 1 object stream
- 41 named destinations out of 1000 (max. 500000)
+ 121 PDF objects out of 1000 (max. 8388607)
+ 94 compressed objects within 1 object stream
+ 43 named destinations out of 1000 (max. 500000)
  23 words of extra memory for PDF output out of 10000 (max. 10000000)
 
