@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.1.2)  27 JAN 2024 10:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.1.2)  27 JAN 2024 17:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1359,27 +1359,27 @@ Overfull \hbox (27.57697pt too wide) detected at line 122
 
  <./figs/signal_x1.png>]
 (./tables/table2.tex)
-Underfull \hbox (badness 3407) in paragraph at lines 143--145
+Underfull \hbox (badness 3407) in paragraph at lines 141--143
 \OT1/txr/m/n/12 Using con-tour in-te-gera-tion for in-verse Z
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 143--145
+Underfull \hbox (badness 10000) in paragraph at lines 141--143
 
  []
 
 
-Overfull \hbox (24.88728pt too wide) detected at line 155
+Overfull \hbox (24.88728pt too wide) detected at line 153
 []
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<figs/signal_x2.png, id=48, 462.528pt x 346.896pt>
+<figs/signal_x2.png, id=47, 462.528pt x 346.896pt>
 File: figs/signal_x2.png Graphic file (type png)
 <use figs/signal_x2.png>
-Package pdftex.def Info: figs/signal_x2.png  used on input line 159.
+Package pdftex.def Info: figs/signal_x2.png  used on input line 157.
 (pdftex.def)             Requested size: 252.0pt x 189.00427pt.
  [2 <./figs/signal_x2.png>] (./math.10.5.3.10.aux)
 
@@ -1389,11 +1389,11 @@ Package rerunfilecheck Info: File `math.10.5.3.10.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 31796 strings out of 476091
- 625834 string characters out of 5794082
+ 31792 strings out of 476091
+ 625802 string characters out of 5794082
  1891330 words of memory out of 5000000
- 51447 multiletter control sequences out of 15000+600000
- 594149 words of font info for 209 fonts, out of 8000000 for 9000
+ 51446 multiletter control sequences out of 15000+600000
+ 592130 words of font info for 206 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  101i,11n,96p,1182b,580s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
@@ -1403,12 +1403,11 @@ t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
 onts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsya.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/urw/times/utmri8a.pfb>
-Output written on math.10.5.3.10.pdf (2 pages, 100179 bytes).
+ist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on math.10.5.3.10.pdf (2 pages, 90475 bytes).
 PDF statistics:
- 129 PDF objects out of 1000 (max. 8388607)
- 101 compressed objects within 2 object streams
+ 123 PDF objects out of 1000 (max. 8388607)
+ 98 compressed objects within 1 object stream
  49 named destinations out of 1000 (max. 500000)
  23 words of extra memory for PDF output out of 10000 (max. 10000000)
 
