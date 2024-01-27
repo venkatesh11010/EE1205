@@ -1,6 +1,28 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
+# Given values of first AP
+a = 3  # first term
+d = 4  # common difference
+n = 15  # number of terms
+
+# Generate the arithmetic progression using NumPy
+ap_sequence = np.arange(a, a + n * d, d)
+
+# Calculate the sum of the first 15 terms using np.sum
+sum_an1 = np.sum(ap_sequence)
+
+# Given values of Second AP
+a = 9  # first term
+d = -5  # common difference
+n = 15  # number of terms
+
+# Generate the arithmetic progression using NumPy
+ap_sequence = np.arange(a, a + n * d, d)
+
+# Calculate the sum of the first 15 terms using np.sum
+sum_an2 = np.sum(ap_sequence)
+
 # Function to calculate x(n) = (3 + 4n)u(n)
 def x_n1(n):
     return (3 + 4 * n) * (n >= 0)
