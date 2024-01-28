@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.1.2)  28 JAN 2024 16:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.1.2)  28 JAN 2024 16:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1163,20 +1163,14 @@ LaTeX Font Info:    Trying to load font information for OT1+txr on input line 4
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
-(./math.10.5.3.10.aux
-
-LaTeX Warning: Label `given parameters list' multiply defined.
-
-
-LaTeX Warning: Label `eq:z-transform' multiply defined.
-
-)
+(./math.10.5.3.10.aux)
 \openout1 = `math.10.5.3.10.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 45.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
 45.
- (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    ... okay on input line 45.
@@ -1326,6 +1320,13 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 5
 File: ts1txr.fd 2000/12/15 v3.1
 )
 (./tables/table1.tex)
+
+LaTeX Warning: Reference `eq:APSum' on page 1 undefined on input line 82.
+
+
+LaTeX Warning: Reference `eq:APSum' on page 1 undefined on input line 82.
+
+
 Overfull \hbox (24.88728pt too wide) detected at line 94
 []
  []
@@ -1358,14 +1359,14 @@ Package pdftex.def Info: figs/signal_x2.png  used on input line 124.
 
  <./figs/signal_x2.png>] (./math.10.5.3.10.aux)
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `math.10.5.3.10.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
  31770 strings out of 476091
- 625479 string characters out of 5794082
+ 625473 string characters out of 5794082
  1886330 words of memory out of 5000000
  51442 multiletter control sequences out of 15000+600000
  590814 words of font info for 204 fonts, out of 8000000 for 9000
@@ -1379,7 +1380,7 @@ onts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsya.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on math.10.5.3.10.pdf (2 pages, 86574 bytes).
+Output written on math.10.5.3.10.pdf (2 pages, 87591 bytes).
 PDF statistics:
  105 PDF objects out of 1000 (max. 8388607)
  80 compressed objects within 1 object stream
