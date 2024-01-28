@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.1.2)  28 JAN 2024 09:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.1.2)  28 JAN 2024 16:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1325,63 +1325,38 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 5
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
-Overfull \hbox (29.57693pt too wide) detected at line 76
-[]
- []
-
 (./tables/table1.tex)
-Underfull \hbox (badness 3407) in paragraph at lines 94--96
-\OT1/txr/m/n/12 Using con-tour in-te-gera-tion for in-verse Z
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 94--96
-
- []
-
-
-Overfull \hbox (24.88728pt too wide) detected at line 106
-[]
- []
-
-<figs/signal_x1.png, id=7, 462.528pt x 346.896pt>
-File: figs/signal_x1.png Graphic file (type png)
-<use figs/signal_x1.png>
-Package pdftex.def Info: figs/signal_x1.png  used on input line 110.
-(pdftex.def)             Requested size: 252.0pt x 189.00427pt.
-
-Overfull \hbox (27.57697pt too wide) detected at line 120
-[]
- []
-
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
-
- <./figs/signal_x1.png>]
-(./tables/table2.tex)
-Underfull \hbox (badness 3407) in paragraph at lines 139--141
-\OT1/txr/m/n/12 Using con-tour in-te-gera-tion for in-verse Z
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 139--141
-
- []
-
-
-Overfull \hbox (24.88728pt too wide) detected at line 151
+Overfull \hbox (24.88728pt too wide) detected at line 94
 []
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<figs/signal_x2.png, id=47, 462.528pt x 346.896pt>
+<figs/signal_x1.png, id=7, 462.528pt x 346.896pt>
+File: figs/signal_x1.png Graphic file (type png)
+<use figs/signal_x1.png>
+Package pdftex.def Info: figs/signal_x1.png  used on input line 98.
+(pdftex.def)             Requested size: 252.0pt x 189.00427pt.
+
+Underfull \vbox (badness 4229) has occurred while \output is active []
+
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+ <./figs/signal_x1.png>]
+Overfull \hbox (24.88728pt too wide) detected at line 120
+[]
+ []
+
+<figs/signal_x2.png, id=41, 462.528pt x 346.896pt>
 File: figs/signal_x2.png Graphic file (type png)
 <use figs/signal_x2.png>
-Package pdftex.def Info: figs/signal_x2.png  used on input line 155.
+Package pdftex.def Info: figs/signal_x2.png  used on input line 124.
 (pdftex.def)             Requested size: 252.0pt x 189.00427pt.
- [2 <./figs/signal_x2.png>] (./math.10.5.3.10.aux)
+[2
+
+ <./figs/signal_x2.png>] (./math.10.5.3.10.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1389,13 +1364,13 @@ Package rerunfilecheck Info: File `math.10.5.3.10.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 31792 strings out of 476091
- 625802 string characters out of 5794082
- 1891330 words of memory out of 5000000
- 51446 multiletter control sequences out of 15000+600000
- 592130 words of font info for 206 fonts, out of 8000000 for 9000
+ 31770 strings out of 476091
+ 625479 string characters out of 5794082
+ 1886330 words of memory out of 5000000
+ 51442 multiletter control sequences out of 15000+600000
+ 590814 words of font info for 204 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 101i,11n,96p,1182b,584s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,13n,96p,1182b,576s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
@@ -1404,10 +1379,10 @@ onts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsya.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on math.10.5.3.10.pdf (2 pages, 90457 bytes).
+Output written on math.10.5.3.10.pdf (2 pages, 86574 bytes).
 PDF statistics:
- 123 PDF objects out of 1000 (max. 8388607)
- 98 compressed objects within 1 object stream
- 49 named destinations out of 1000 (max. 500000)
+ 105 PDF objects out of 1000 (max. 8388607)
+ 80 compressed objects within 1 object stream
+ 36 named destinations out of 1000 (max. 500000)
  23 words of extra memory for PDF output out of 10000 (max. 10000000)
 

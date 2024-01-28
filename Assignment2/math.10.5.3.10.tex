@@ -66,33 +66,21 @@
 \end{enumerate}
 Also find the sum of the first 15 terms in each case.
 
-\textbf{Answer:} 
-\begin{enumerate} [label=(\roman*)]
-    \item We know that, The AP has constant common difference between two consecutive terms.
-    \begin{align}
-        \therefore \text{common difference } (d) &= a_{n+1} - a_n \\
-        &= \brak{3+4\brak{n+1}} -\brak{3+4n}\\
-        &= 4
-    \end{align}
-   $\because$ Given equation has common difference between any two consecutive terms is $4$ i.e. independent of '$n$'\\
-    Hence given sequence is in AP.
-    \begin{table}[htbp] 
+\textbf{Solution:} 
+    \begin{table}[!h] 
     \centering
     \input{tables/table1}
-    \caption{Given \, parameters in $1^{st}$ AP}
+    \caption{Given parameters}
     \label{given parameters list}
     \end{table}
-
-    \begin{align}
-         X(z) &= \sum_{n = -\infty}^{\infty} x(n) z^{-n} \label{eq:z-transform}\\
-         &= \sum_{n = -\infty}^{\infty}[3 + 4n].u(n) \, z^{-n} \\
-        nu(n) &\system{Z} -z.U'(z)\\
+\begin{enumerate} 
+    \item\begin{align}
         X(z) &= \frac{3}{1-z^{-1}} + \frac{4.z^{-1}}{(1-z^{-1})^2} ; |z|>1\\
         \because y(n) &= x(n) * u(n)\\
         Y(z) &= X(z)U(z)\\
         &= \sbrak{\frac{3}{1-z^{-1}} + \frac{4 z^{-1}}{\brak{1-z^{-1}}^2} }.\frac{1}{1-z^{-1}}
     \end{align}
-    Using contour integeration for inverse Z transformation,\\
+    Using contour integration for inverse Z transformation,
     \begin{align}
         y(14) &= \frac{1}{2\pi j}\int Y(z) z^{13} dz \\
          &= \frac{1}{2\pi j}\int \frac{3.z^{15}}{(z-1)^{2}} dz + \frac{1}{2\pi j}\int \frac{4.z^{15}}{(z-1)^{3}} dz\\
@@ -112,32 +100,13 @@ Also find the sum of the first 15 terms in each case.
     \label{fig:Graph1}
     \end{figure}
     
-    \item We know that, The AP has constant common difference between two consecutive terms.
-    \begin{align}
-        \therefore \text{common difference } (d) &= a_{n+1} - a_n  \\
-        &= \brak{9-5(n+1)} - \brak{9-5n}\\
-        &= -5
-    \end{align}
-   $\because$ Given equation has common difference between any two consecutive terms is $-5$ i.e. independent of '$n$'\\
-    Hence given sequence is in AP.
-
-    \begin{table}[htbp] 
-    \centering
-    \input{tables/table2}
-    \caption{Given \, parameters in $2^{st}$ AP}
-    \label{given parameters list}
-    \end{table}
-
-    \begin{align}
-         X(z) &= \sum_{n = -\infty}^{\infty} x(n) z^{-n} \label{eq:z-transform}\\
-          &= \sum_{n = -\infty}^{\infty}[9 - 5n].u(n) \, z^{-n} \\
-        nu(n) &\system{Z} -z.U'(z)\\
+    \item \begin{align}
          X(z) &= \frac{9}{1-z^{-1}} - \frac{5.z^{-1}}{(1-z^{-1})^2} ; |z|>1\\
         \because y(n) &= x(n) * u(n)\\
         Y(z) &= X(z)U(z)\\
          &= \sbrak{\frac{9}{1-z^{-1}} - \frac{5 z^{-1}}{\brak{1-z^{-1}}^2} }.\frac{1}{1-z^{-1}}
     \end{align}
-    Using contour integeration for inverse Z transformation,\\
+    Using contour integration for inverse Z transformation,
     \begin{align}
         y(14) &= \frac{1}{2\pi j}\int Y(z) z^{13} dz \\
          &= \frac{1}{2\pi j}\int \frac{9.z^{15}}{(z-1)^{2}} dz - \frac{1}{2\pi j}\int \frac{5.z^{15}}{(z-1)^{3}} dz\\
