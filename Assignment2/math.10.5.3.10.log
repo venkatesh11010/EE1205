@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.1.2)  28 JAN 2024 17:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.1.2)  29 JAN 2024 09:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1340,6 +1340,13 @@ File: figs/signal_x1.png Graphic file (type png)
 Package pdftex.def Info: figs/signal_x1.png  used on input line 98.
 (pdftex.def)             Requested size: 252.0pt x 189.00427pt.
 
+
+LaTeX Warning: Reference `eq:APSum' on page 1 undefined on input line 108.
+
+
+LaTeX Warning: Reference `eq:APSum' on page 1 undefined on input line 108.
+
+
 Underfull \vbox (badness 4229) has occurred while \output is active []
 
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
@@ -1380,7 +1387,7 @@ onts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsya.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on math.10.5.3.10.pdf (2 pages, 83099 bytes).
+Output written on math.10.5.3.10.pdf (2 pages, 83095 bytes).
 PDF statistics:
  105 PDF objects out of 1000 (max. 8388607)
  80 compressed objects within 1 object stream
