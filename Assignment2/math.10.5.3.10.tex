@@ -98,7 +98,14 @@ Also find the sum of the first 15 terms in each case.
     \centering
     \includegraphics[width=\columnwidth]{figs/signal_x1.png}
     \caption{$x_1(n)=(3+4n)u(n)$}
-    \label{fig:Graph1}
+    \label{fig:Graph1_math.10.5.3.10}
+    \end{figure}
+
+    \begin{figure}[!h] 
+    \centering
+    \includegraphics[width=\columnwidth]{figs/signal_y1.png}
+    \caption{$x_1(n)=(2n^2+5n+3)u(n)$}
+    \label{fig:Graph2_math.10.5.3.10}
     \end{figure}
     
     \item From equation  \eqref{eq:APSum}
@@ -110,7 +117,7 @@ Also find the sum of the first 15 terms in each case.
     \end{align}
     Using contour integration for inverse Z transformation,
     \begin{align}
-        y(14) &= \frac{1}{2\pi j}\int Y(z) z^{13} dz \\
+       y(14) &= \frac{1}{2\pi j}\int Y(z) z^{13} dz \\
          &= \frac{1}{2\pi j}\int \frac{9.z^{15}}{(z-1)^{2}} dz - \frac{1}{2\pi j}\int \frac{5.z^{15}}{(z-1)^{3}} dz\\
         \because R&=\frac{1}{\brak {m-1}!}\lim\limits_{z\to a}\frac{d^{m-1}}{dz^{m-1}}\brak {{(z-a)}^{m}f\brak z}\\
         R_1 &=\frac{1}{1!}\lim\limits_{z\to 1}\frac{d}{dz}\brak {(z-1)^2.\frac{9.z^{15}}{(z-1)^{2}}}\\
@@ -125,9 +132,16 @@ Also find the sum of the first 15 terms in each case.
     \centering
     \includegraphics[width=\columnwidth]{figs/signal_x2.png}
     \caption{$x_2(n)=(9-5n)u(n)$}
-    \label{fig:Graph2}
+    \label{fig:Graph3_math.10.5.3.10}
+    \end{figure}
+
+    \begin{figure}[!h] 
+    \centering
+    \includegraphics[width=\columnwidth]{figs/signal_y2.png}
+    \caption{$x_2(n)=(-5n^2+13n+18)u(n)$}
+    \label{fig:Graph4_math.10.5.3.10}
     \end{figure}
 
 \end{enumerate}
 
-\end{document}
+\end{document} 
