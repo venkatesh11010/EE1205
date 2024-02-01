@@ -1,5 +1,5 @@
 % \iffalse
-\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
 \usepackage{cite}
 \usepackage{amsmath,amssymb,amsfonts,amsthm}
 \usepackage{algorithmic}
@@ -67,23 +67,30 @@
 
 from equation \eqref{eq:11.9.5.26.2} to \eqref{eq:11.9.5.26.4},\\
     \begin{align}
-        X(Z) &= \frac{z^{-1}\brak{1+4z^{-1}+z^{-2}}}{\brak{1-z^{-1}}^4} + \frac{5z^{-1}\brak{z^{-1}+1}}{\brak{1-z^{-1}}^3} + \frac{4z^{-1}}{\brak{1-z^{-1}}^2} \\
+        X(z) &= \frac{z^{-1}\brak{1+4z^{-1}+z^{-2}}}{\brak{1-z^{-1}}^4} + \frac{5z^{-1}\brak{z^{-1}+1}}{\brak{1-z^{-1}}^3} + \frac{4z^{-1}}{\brak{1-z^{-1}}^2} \\
         Y(z) &= X(z)U(z)\\
         &= \frac{z^{-1}\brak{1+4z^{-1}+z^{-2}}}{\brak{1-z^{-1}}^5} + \frac{5z^{-1}\brak{z^{-1}+1}}{\brak{1-z^{-1}}^4} + \frac{4z^{-1}}{\brak{1-z^{-1}}^3} 
     \end{align}
 Using contour integration for inverse Z transformation,
     \begin{align}
         y(n-1) &= \frac{1}{2\pi j}\oint_c Y(z) z^{n-2} dz \\
-        &= \frac{1}{2\pi j}\oint_c \frac{\brak{z^2+4z+1}}{\brak{z-1}^5} z^{n} dz  + \frac{1}{2\pi j}\oint_c \frac{5\brak{z+1}}{\brak{z-1}^4} z^{n} dz  + \frac{1}{2\pi j}\oint_c \frac{4}{\brak{z-1}^3} z^{n} dz \\
-        \because R&=\frac{1}{\brak {m-1}!}\lim\limits_{z\to a}\frac{d^{m-1}}{dz^{m-1}}\brak {{(z-a)}^{m}f\brak z}\\
+        &= \frac{1}{2\pi j}\oint_c \frac{\brak{z^2+4z+1}}{\brak{z-1}^5} z^{n} dz  \nonumber\\
+        &+ \frac{1}{2\pi j}\oint_c \frac{5\brak{z+1}}{\brak{z-1}^4} z^{n} dz   \nonumber\\
+        &+ \frac{1}{2\pi j}\oint_c \frac{4}{\brak{z-1}^3} z^{n} dz \\
+        \because R&=\frac{1}{\brak {m-1}!}\lim\limits_{z\to a}\frac{d^{m-1}}{dz^{m-1}}\brak {{(z-a)}^{m}f\brak z}
+    \end{align}
+    \begin{align}
         R_1 &=\frac{1}{4!}\lim\limits_{z\to 1}\frac{d^4}{dz^4}\brak {(z-1)^5 \frac{\brak{z^2+4z+1}z^n}{\brak{z-1}^5}}\\
-        &= \frac{(n+2)(n+1)(n)(n-1)}{4!} + \frac{4(n+1)(n)(n-1)(n-2)}{4!} + \frac{n(n-1)(n-2)(n-3)}{4!}\\
+        &= \frac{(n+2)(n+1)(n)(n-1)}{4!} \nonumber\\
+        & + \frac{4(n+1)(n)(n-1)(n-2)}{4!} \nonumber\\
+        & + \frac{n(n-1)(n-2)(n-3)}{4!}\\
         R_2 &=\frac{1}{3!}\lim\limits_{z\to 1}\frac{d^3}{dz^3} \brak{(z-1)^4 \frac{5\brak{z+1}z^n}{\brak{z-1}^4}}\\
         &= \frac{5(n+1)(n)(n-1)}{3!} + \frac{5n(n-1)(n-2)}{3!}\\
         R_3 &=\frac{1}{2!}\lim\limits_{z\to 1}\frac{d^2}{dz^2} \brak{(z-1)^3 \frac{4z^n}{\brak{z-1}^3}}\\
         &= \frac{4n(n-1)}{2!}\\
         \implies y(n-1) &= R_1 + R_2 + R_3 \\
-        &= \frac{n^2(n-1)^2}{4} + \frac{5n(n-1)(2n-1)}{6} + \frac{4n(n-1)}{2}
+        &= \frac{n^2(n-1)^2}{4} + \frac{5n(n-1)(2n-1)}{6} \nonumber\\
+        &+ \frac{4n(n-1)}{2}
     \end{align}
 
     \begin{figure}[!h] 
