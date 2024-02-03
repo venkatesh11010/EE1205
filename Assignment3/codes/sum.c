@@ -3,7 +3,7 @@
 
 // Define the function
 double expression(int n) {
-    return ((n * n * (n + 1) * (n + 1) / 4.0) + (8.0 * n * (n + 1) * (2 * n + 1) / 6.0) + (17.0 * n * (n + 1) / 2.0) + (10.0 * (n + 1))) * (n > 0);
+    return ((n * n * (n + 1) * (n + 1) / 4.0) + (5.0 * n * (n + 1) * (2 * n + 1) / 6.0) + (4.0 * n * (n + 1) / 2.0)) * (n >= 0);
 }
 
 int main() {
