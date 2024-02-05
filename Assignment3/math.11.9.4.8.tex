@@ -86,10 +86,19 @@ From equation \eqref{eq:11.9.5.26.2} to \eqref{eq:11.9.5.26.4},\\
     
     Taking reverse z transform, using equations \eqref{eq:z transform of nu(n)} to \eqref{eq:z transform of n^4u(n)}
     \begin{align}
-        y(n) &= \brak{\frac{n^4}{4} + \frac{13n^3}{6} + \frac{19n^2}{4} + \frac{17n}{6}} u\brak{n}\\
-        &= \brak{\frac{n^2\brak{n+1}^2}{4} + \frac{5n(n+1)(2n+1)}{6} 
-        + \frac{4n(n+1)}{2}} u\brak{n}
+        y(n) = \brak{\frac{n^4}{4} + \frac{13n^3}{6} + \frac{19n^2}{4} + \frac{17n}{6}} u\brak{n}
     \end{align}
+    \begin{multline}
+        = \brak{\frac{n^4}{4} + \frac{2n^3}{4} + \frac{10n^3}{6} + \frac{n^2}{4} + \frac{15n^2}{6} + \frac{4n^2}{2} + \frac{5n}{6} + \frac{4n}{2}} u\brak{n}
+    \end{multline}
+    \begin{multline}
+        = \brak{\frac{n^4+2n^3+n^4}{4}}u\brak{n} +\brak{\frac{10n^3+15n^2+5n}{6}}u\brak{n}\\
+        +\brak{\frac{4n^2+4n}{2}}u\brak{n}
+    \end{multline}
+    \begin{multline}
+        = \brak{\frac{n^2\brak{n+1}^2}{4} + \frac{5n(n+1)(2n+1)}{6} 
+        + \frac{4n(n+1)}{2}} u\brak{n}
+    \end{multline}
     \begin{figure}[!h] 
     \centering
     \includegraphics[width=\columnwidth]{figs/sumplot.png}
