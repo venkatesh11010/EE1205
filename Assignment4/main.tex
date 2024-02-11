@@ -66,15 +66,36 @@ $x = 0.0$, and $y = 0.8$ at $x = 1.0$, the value of $\alpha$ is (rounded off to 
 \label{given parameters list.gate.ce.30}
 \end{table}
 
+% \begin{align}
+%     \frac{dy}{dx} + \alpha x y &= 0\\
+%     \int \frac{dy}{y} &= - \int \alpha x dx\\
+%     \ln(\abs{y}) &= - \frac{\alpha x^2}{2} + c
+% \end{align}
+% Substituting $x$ and $y$ values,
+% \begin{align}
+%     c &= \ln(1) = 0\\
+%     \alpha &= -2 \ln(0.8) = 0.446
+% \end{align}
+
+
+
 \begin{align}
-    \frac{dy}{dx} + \alpha x y &= 0\\
-    \int \frac{dy}{y} &= - \int \alpha x dx\\
-    \ln(\abs{y}) &= - \frac{\alpha x^2}{2} + c
+    \frac{dy}{dx} + \alpha x y &= 0
 \end{align}
-Substituting $x$ and $y$ values,
+Taking laplace transform,\\
 \begin{align}
-    c &= \ln(1) = 0\\
-    \alpha &= -2 \ln(0.8) = 0.446
+    sY(s)-y(0) - \alpha \frac{dY(s)}{ds} &=0\\
+    \frac{dY(s)}{ds} - \frac{s}{\alpha} Y(s) &= -\frac{Y(0)}{\alpha}\\ 
 \end{align}
+
+I.F.= $e^{\int -\frac{s}{\alpha}ds} = e^{-\frac{s^2}{2\alpha}}$
+\begin{align}
+    e^{-\frac{s^2}{2\alpha}} Y(s) &= \frac{y(0)}{\alpha}\int_{-\infty}^{\infty} e^{-\frac{s^2}{2\alpha}} ds\\
+    &= -\frac{y(0)}{\alpha} \sqrt{2\pi\alpha}\\
+    Y(s)= -\sqrt{\frac{2\pi}{\alpha}} y(0) e^{\frac{s^2}{2\alpha}}\\
+    Y'(s) = -\sqrt{\frac{2\pi}{\alpha}} y(0) e^{\frac{s^2}{2\alpha}} \frac{s}{\alpha}
+\end{align}
+
+
 
 \end{document}
