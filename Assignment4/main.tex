@@ -78,24 +78,40 @@ $x = 0.0$, and $y = 0.8$ at $x = 1.0$, the value of $\alpha$ is (rounded off to 
 % \end{align}
 
 
-
+let, t=x
 \begin{align}
-    \frac{dy}{dx} + \alpha x y &= 0
-\end{align}
-Taking laplace transform,\\
-\begin{align}
-    sY(s)-y(0) - \alpha \frac{dY(s)}{ds} &=0\\
-    \frac{dY(s)}{ds} - \frac{s}{\alpha} Y(s) &= -\frac{Y(0)}{\alpha}\\ 
+    \frac{dy}{dt} + \alpha t y &= 0
 \end{align}
 
-I.F.= $e^{\int -\frac{s}{\alpha}ds} = e^{-\frac{s^2}{2\alpha}}$
+Taking fourier transform,
+
+where,
+$\mathcal{F}\{\frac{dy}{dt}\} = 2\pi fj Y(f) $ \\
+$\mathcal{F}\{a \cdot t \cdot y(t)\} = a \cdot j \frac{d}{df} Y(f)$
+
 \begin{align}
-    e^{-\frac{s^2}{2\alpha}} Y(s) &= \frac{y(0)}{\alpha}\int_{-\infty}^{\infty} e^{-\frac{s^2}{2\alpha}} ds\\
-    &= -\frac{y(0)}{\alpha} \sqrt{2\pi\alpha}\\
-    Y(s)= -\sqrt{\frac{2\pi}{\alpha}} y(0) e^{\frac{s^2}{2\alpha}}\\
-    Y'(s) = -\sqrt{\frac{2\pi}{\alpha}} y(0) e^{\frac{s^2}{2\alpha}} \frac{s}{\alpha}
+    \frac{2\pi f}{\alpha} Y(f) + \frac{d}{df} Y(f) = 0
 \end{align}
 
 
+% Taking laplace transform,\\
+% \begin{align}
+%     sY(s)-y(0) - \alpha \frac{dY(s)}{ds} &=0\\
+%     \frac{dY(s)}{ds} - \frac{s}{\alpha} Y(s) &= -\frac{Y(0)}{\alpha}\\ 
+% \end{align}
+
+I.F.= $e^{\int\frac{2\pi}{\alpha} f df} = e^{\frac{\pi}{\alpha} f^2}$
+\begin{align}
+    e^{\frac{\pi}{\alpha} f^2} Y(f) &= K\\
+    Y(f) &= K e^{-\frac{\pi}{\alpha} f^2}
+\end{align}
+Taking inverse fourier transform,
+since, \[ \mathcal{F}^{-1}\{e^{-af^2}\} = \sqrt{\frac{\pi}{a}} \cdot e^{-\frac{\pi^2}{a}t^2} \]
+\begin{align}
+    y(t) = K \sqrt{\alpha} e^{-\pi\alpha t^2}\\
+    \frac{y(0)}{y(1)} = \frac{1}{e^{-\pi\alpha}}\\
+    \ln\frac{5}{4} = \pi \alpha \\
+    \alpha = \frac{0.223}{\pi} 
+\end{align}
 
 \end{document}
