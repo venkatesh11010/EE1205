@@ -78,7 +78,7 @@ $x = 0.0$, and $y = 0.8$ at $x = 1.0$, the value of $\alpha$ is (rounded off to 
 % \end{align}
 
 
-let, t=x
+let, $t=x$
 \begin{align}
     \frac{dy}{dt} + \alpha t y &= 0
 \end{align}
@@ -86,32 +86,27 @@ let, t=x
 Taking fourier transform,
 
 where,
-$\mathcal{F}\{\frac{dy}{dt}\} = 2\pi fj Y(f) $ \\
-$\mathcal{F}\{a \cdot t \cdot y(t)\} = a \cdot j \frac{d}{df} Y(f)$
+$\mathcal{F}\{\frac{dy}{dt}\} = \omega j Y(\omega) $\\
+ $\mathcal{F}\{a \cdot t \cdot y(t)\} = a \cdot j \frac{d}{d\omega} Y(\omega)$
 
 \begin{align}
-    \frac{2\pi f}{\alpha} Y(f) + \frac{d}{df} Y(f) = 0
+    \frac{\omega}{\alpha} Y(\omega) + \frac{d}{d\omega} Y(\omega) = 0
 \end{align}
 
-
-% Taking laplace transform,\\
-% \begin{align}
-%     sY(s)-y(0) - \alpha \frac{dY(s)}{ds} &=0\\
-%     \frac{dY(s)}{ds} - \frac{s}{\alpha} Y(s) &= -\frac{Y(0)}{\alpha}\\ 
-% \end{align}
-
-I.F.= $e^{\int\frac{2\pi}{\alpha} f df} = e^{\frac{\pi}{\alpha} f^2}$
+I.F.= $e^{\int\frac{\omega}{\alpha} d\omega} = e^{\frac{\omega^2}{2\alpha} }$
 \begin{align}
-    e^{\frac{\pi}{\alpha} f^2} Y(f) &= K\\
-    Y(f) &= K e^{-\frac{\pi}{\alpha} f^2}
+    e^{\frac{\omega^2}{2\alpha} } Y(\omega) &= K\\
+    Y(\omega) &= K e^{-\frac{\omega^2}{2\alpha} }
 \end{align}
-Taking inverse fourier transform,
-since, \[ \mathcal{F}^{-1}\{e^{-af^2}\} = \sqrt{\frac{\pi}{a}} \cdot e^{-\frac{\pi^2}{a}t^2} \]
+
+Taking inverse fourier transform, Using gaussian integral,
+WKT, \[ \mathcal{F}^{-1}\{e^{-a\omega^2}\} = \frac{1}{\sqrt{4\pi a}} e^{-\frac{t^2}{4a}} \]
 \begin{align}
-    y(t) = K \sqrt{\alpha} e^{-\pi\alpha t^2}\\
-    \frac{y(0)}{y(1)} = \frac{1}{e^{-\pi\alpha}}\\
-    \ln\frac{5}{4} = \pi \alpha \\
-    \alpha = \frac{0.223}{\pi} 
+    y(t) = K \frac{\alpha}{\sqrt{2\pi}} e^{-\frac{\alpha t^2}{2}}\\
+    \frac{y(0)}{y(1)} = \frac{1}{e^{-\frac{\alpha}{2}}}\\
+    \ln\frac{5}{4} = \frac{\alpha}{2} \\
+    \alpha = 0.446 
 \end{align}
+
 
 \end{document}
