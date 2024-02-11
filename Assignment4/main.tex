@@ -82,30 +82,25 @@ let, $t=x$
 \begin{align}
     \frac{dy}{dt} + \alpha t y &= 0
 \end{align}
-
 Taking fourier transform,
-
 where,
-$\mathcal{F}\{\frac{dy}{dt}\} = \omega j Y(\omega) $\\
- $\mathcal{F}\{a \cdot t \cdot y(t)\} = a \cdot j \frac{d}{d\omega} Y(\omega)$
-
 \begin{align}
-    \frac{\omega}{\alpha} Y(\omega) + \frac{d}{d\omega} Y(\omega) = 0
+    \frac{dy}{dt} & \system{\mathcal{F}} \omega j Y(\omega) \\
+    a \cdot t \cdot y(t) & \system{\mathcal{F}} a \cdot j \frac{d}{d\omega} Y(\omega)
 \end{align}
-
-I.F.= $e^{\int\frac{\omega}{\alpha} d\omega} = e^{\frac{\omega^2}{2\alpha} }$
 \begin{align}
-    e^{\frac{\omega^2}{2\alpha} } Y(\omega) &= K\\
+    \frac{\omega}{\alpha} Y(\omega) + \frac{d}{d\omega} Y(\omega) &= 0\\
     Y(\omega) &= K e^{-\frac{\omega^2}{2\alpha} }
 \end{align}
 
 Taking inverse fourier transform, Using gaussian integral,
-WKT, \[ \mathcal{F}^{-1}\{e^{-a\omega^2}\} = \frac{1}{\sqrt{4\pi a}} e^{-\frac{t^2}{4a}} \]
+WKT, 
 \begin{align}
-    y(t) = K \frac{\alpha}{\sqrt{2\pi}} e^{-\frac{\alpha t^2}{2}}\\
-    \frac{y(0)}{y(1)} = \frac{1}{e^{-\frac{\alpha}{2}}}\\
-    \ln\frac{5}{4} = \frac{\alpha}{2} \\
-    \alpha = 0.446 
+     e^{-a\omega^2} &\system{\mathcal{F}^{-1}} \frac{1}{\sqrt{4\pi a}} e^{-\frac{t^2}{4a}} \\
+    y(t) &= K \frac{\alpha}{\sqrt{2\pi}} e^{-\frac{\alpha t^2}{2}}\\
+    \frac{y(0)}{y(1)} &= \frac{1}{e^{-\frac{\alpha}{2}}}\\
+    \ln\frac{5}{4} &= \frac{\alpha}{2} \\
+    \alpha &= 0.446 
 \end{align}
 
 
