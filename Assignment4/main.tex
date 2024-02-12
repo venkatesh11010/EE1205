@@ -85,9 +85,10 @@ let, $t=x$
 Taking fourier transform,
 where,
 \begin{align}
-    \frac{dy}{dt} & \system{\mathcal{F}} \omega j Y(\omega) \\
-    a \cdot t \cdot y(t) & \system{\mathcal{F}} a \cdot j \frac{d}{d\omega} Y(\omega)
+    \frac{dy}{dt} & \system{\mathcal{F}} j\omega Y(\omega) \label{fourier transform of dy/dt_ce_30}\\
+    a \cdot t \cdot y(t) & \system{\mathcal{F}} a \cdot j \frac{d}{d\omega} Y(\omega)\label{fourier transform of aty_ce_30}
 \end{align}
+From equation \eqref{fourier transform of dy/dt_ce_30} and \eqref{fourier transform of aty_ce_30}:
 \begin{align}
     \frac{\omega}{\alpha} Y(\omega) + \frac{d}{d\omega} Y(\omega) &= 0\\
     Y(\omega) &= K e^{-\frac{\omega^2}{2\alpha} }
@@ -96,12 +97,21 @@ where,
 Taking inverse fourier transform, Using gaussian integral,
 WKT, 
 \begin{align}
-     e^{-a\omega^2} &\system{\mathcal{F}^{-1}} \frac{1}{\sqrt{4\pi a}} e^{-\frac{t^2}{4a}} \\
+     e^{-a\omega^2} \mathrel{\substack{\mathcal{F}^{-1}\\\longleftrightarrow}} \frac{1}{\sqrt{4\pi a}} e^{-\frac{t^2}{4a}}
+\end{align}
+From \tabref{given parameters list.gate.ce.30}:
+\begin{align}
     y(t) &= K \frac{\alpha}{\sqrt{2\pi}} e^{-\frac{\alpha t^2}{2}}\\
     \frac{y(0)}{y(1)} &= \frac{1}{e^{-\frac{\alpha}{2}}}\\
     \ln\frac{5}{4} &= \frac{\alpha}{2} \\
     \alpha &= 0.446 
 \end{align}
 
+\begin{figure}[!h] 
+    \centering
+    \includegraphics[width=\columnwidth]{figs/graph_of_y(t).png}
+    \caption{Graph of y(t)}
+    \label{fig:Graph1_gate_CE_30}
+    \end{figure}
 
 \end{document}
