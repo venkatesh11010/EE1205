@@ -76,29 +76,14 @@ Let, $t=x$
 Taking Fourier Transform:\\
 where,
 \begin{align}
-    e^{-a t^2} \system{\mathcal{F}} \sqrt{\frac{\pi}{a}} e^{-\frac{4\pi^2 f^2}{2\alpha}}\label{fourier transform of e^{-a t^2}}
-\end{align}
-From equation \eqref{fourier transform of e^{-a t^2}}:
-\begin{align}
-     Y(f) &=  \sqrt{\frac{2\pi}{\alpha}}e^c \cdot e^{-\frac{4\pi^2 f^2}{2\alpha}}
-\end{align}
-
-Taking Fourier Transform:\\
-where,
-\begin{align}
     \frac{dy}{dt} & \system{\mathcal{F}} j 2\pi f Y(f) \label{fourier transform of dy/dt_ce_30}\\
-    a \cdot t \cdot y(t) & \system{\mathcal{F}} a \cdot \frac{j}{2\pi} \frac{d}{df} Y(f)\label{fourier transform of aty_ce_30}
+    a t y(t) & \system{\mathcal{F}} a \frac{j}{2\pi} \frac{d}{df} Y(f)\label{fourier transform of aty_ce_30}
 \end{align}
 From equation \eqref{fourier transform of dy/dt_ce_30} and \eqref{fourier transform of aty_ce_30}:
 \begin{align}
     \frac{4\pi^2 f}{\alpha} Y(f) + \frac{d}{df} Y(f) &= 0\\
     Y(f) &= K e^{-\frac{4\pi^2 f^2}{2\alpha}}
 \end{align}
-where, 
-\begin{align}
-    K =  \sqrt{\frac{2\pi}{\alpha}}e^c
-\end{align}
-
 Substituting $x$ and $y$ values:
 \begin{align}
     c &= \ln(1) = 0\\
