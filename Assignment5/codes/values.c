@@ -1,12 +1,13 @@
 #include <stdio.h>
+#include<math.h>
 
 int main() {
     FILE *fp;
     fp = fopen("data5.dat", "w");
 
-    for (double s = 0.1; s <= 10.0; s += 0.1) {
-        double Y_s = (10 * s + 1) / (s * (5 * s + 1));
-        fprintf(fp, "%.2f %.4f\n", s, Y_s);
+    for (double t = 0.1; t <= 10.0; t += 0.1) {
+        double Y_t = 1 + exp(-t/5);
+        fprintf(fp, "%.2f %.4f\n", t, Y_t);
     }
 
     fclose(fp);
