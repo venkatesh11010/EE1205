@@ -73,14 +73,19 @@ is forced by a unit step input at time $t = 0$. The output value immediately aft
 \end{align}
 From equation \eqref{laplace transform of unit function 2022.ch.34}:
 \begin{align}
-    Y(s) = \frac{\brak{10s+1}}{s\brak{5s+1}}
+    Y(s) &= \frac{\brak{10s+1}}{s\brak{5s+1}}\\
+    &= \frac{1}{s} + \frac{5}{5s+1}
 \end{align}
-By Initial value theorem:
+Taking inverse laplace transformation, 
 \begin{align}
-    \lim_{{t \to 0^+}} y(t) &= \lim_{{s \to \infty}} sY(s)\\
-    &= \lim_{{s \to \infty}} \frac{\brak{10s+1}}{\brak{5s+1}}\\
-    &= 2
+    \frac{1}{s} &\mathrel{\substack{\mathcal{L}^{-1}\\\longleftrightarrow}} 1\\
+    \frac{1}{s-c} &\mathrel{\substack{\mathcal{L}^{-1}\\\longleftrightarrow}} e^ct
 \end{align}
+\begin{align}
+    y(t) &= 1 + e^{\frac{-t}{5}}\\
+    y(0^+) &= 2
+\end{align}
+
 \begin{figure}[!h] 
     \centering
     \includegraphics[width=\columnwidth]{figs/Graph_of_y(s).png}
