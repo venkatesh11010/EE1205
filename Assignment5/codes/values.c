@@ -2,8 +2,8 @@
 #include<math.h>
 
 double calculate_limit() {
-    double s = 1e20;  // A large value for s, approaching infinity
-    return (10 * s + 1) / (5 * s + 1);
+    double t = 0;  // calculating y(t) at 0+
+    return (1 + exp(-t / 5)) * (t >= 0);
 }
 
 int main() {
@@ -18,7 +18,7 @@ int main() {
     fclose(fp);
 
     double limit_result = calculate_limit();
-
+    
     return 0;
 }
 
