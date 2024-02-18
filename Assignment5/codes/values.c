@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include<math.h>
 
+double calculate_limit() {
+    double s = 1e20;  // A large value for s, approaching infinity
+    return (10 * s + 1) / (5 * s + 1);
+}
+
 int main() {
     FILE *fp;
     fp = fopen("data5.dat", "w");
@@ -11,6 +16,9 @@ int main() {
     }
 
     fclose(fp);
+
+    double limit_result = calculate_limit();
+
     return 0;
 }
 
