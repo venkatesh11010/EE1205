@@ -7,8 +7,8 @@ double y_t(float t) {
 }
 
 double fn_sY_s(float t , double s, double *sY_s) {
-    for (double t = 0.1; t <= 100.0; t += 0.1) {
-        *sY_s += ((s)*(y_t(t))*(exp(-s*t))*(0.1));
+    for (double t = 0.0001; t <= 100.0; t += 0.0001) {
+        *sY_s +=((s)*(y_t(t))*(exp(-s*t))*(0.0001));
     }
     return *sY_s;
 }
@@ -17,7 +17,7 @@ int main() {
     FILE *fp;
     fp = fopen("data5.dat", "w");
     float t = 0.1 ;
-    double s = DBL_MAX;
+    double s = 100;
     double sY_s = 0.0;
 
     for (double t = 0.1; t <= 100.0; t += 0.1) {
