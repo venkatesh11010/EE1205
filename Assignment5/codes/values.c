@@ -1,27 +1,34 @@
 #include <stdio.h>
 #include<math.h>
+#include <float.h>
 
-double y_0() {
-    double t = 0;  // calculating y(t) at 0+
+double y_t(float t) {
     return (1 + exp(-t / 5)) * (t >= 0);
+}
+
+double fn_sY_s(float t , double s, double *sY_s) {
+    for (double t = 0.1; t <= 100.0; t += 0.1) {
+        *sY_s += ((s)*(y_t(t))*(exp(-s*t))*(0.1));
+    }
+    return *sY_s;
 }
 
 int main() {
     FILE *fp;
     fp = fopen("data5.dat", "w");
-    double s = 100;
+    float t = 0.1 ;
+    double s = DBL_MAX;
     double sY_s = 0.0;
 
     for (double t = 0.1; t <= 100.0; t += 0.1) {
-        double y_t = 1 + exp(-t/5);
-        sY_s += ((s)*(1 + exp(-t/5))*(exp(-s*t))*(0.1));
-        fprintf(fp, "%.2f %.4f\n", t, y_t);
+        fprintf(fp, "%e %e\n", t, y_t(t));
     }
 
     fclose(fp);
 
-    double limit_y = y_0();
-    
+    float t_i = 0;
+    printf("%e , %.4f \n",y_t(t_i),fn_sY_s(t,s,&sY_s));
+
     return 0;
 }
 
