@@ -75,22 +75,22 @@ are shown below. If $y(t_d) = 0$ for $x(t) = u(t)$, the time $t_d (> 0)$ is.\\
     \label{tab:my_label}
 \end{table}
 \begin{align}
-    \because \abs{H(j\omega} &= 1\\
+    \because \abs{H\brak{f}} &= 1\\
     \abs{z} &= \abs{\bar{z}}\\
-    \therefore H(j\omega) &= \frac{a - j\omega}{a + j\omega}\\
-    \theta_{H(j\omega)} &= \tan^{-1}(\frac{-\omega}{a}) - \tan^{-1}(\frac{\omega}{a})\\
-    &= -2 \tan^{-1}(\frac{\omega}{a})
+    \therefore H(f) &= \frac{a - j2\pi f}{a + j2\pi f}\\
+    \angle {H(f)} &= \tan^{-1}\brak{\frac{-2\pi f}{a}} - \tan^{-1}\brak{\frac{2\pi f}{a}}\\
+    &= -2 \tan^{-1}\brak{\frac{2\pi f}{a}}
 \end{align}
-At $\omega = 10^4, \theta_{H(j\omega)} = -\frac{\pi}{2}$
+At $2\pi f = 10^4, \angle{H(f)} = -\frac{\pi}{2}$
 \begin{align}
     \implies a = 10^4 
 \end{align}
 \begin{align}
-    u(t) &\system{\mathcal{F}} \frac{1}{j\omega}\\
-    Y(j\omega) &= \frac{1}{j\omega} \frac{a - j\omega}{a + j\omega}\\
-    &= \frac{1}{j\omega} - \frac{2}{a + j\omega}\\
-    \frac{1}{j\omega} &\mathrel{\substack{\mathcal{F}^{-1}\\\longleftrightarrow}} u(t)\\
-    \frac{1}{a + j\omega} &\mathrel{\substack{\mathcal{F}^{-1}\\\longleftrightarrow}} e^{-at} u(t) \\
+    u(t) &\system{\mathcal{F}} \frac{1}{j2\pi f}\\
+    Y(f) &= \frac{1}{j2\pi f} \frac{a - j2\pi f}{a + j2\pi f}\\
+    &= \frac{1}{j2\pi f} - \frac{2}{a + j2\pi f}\\
+    \frac{1}{j2\pi f} &\mathrel{\substack{\mathcal{F}^{-1}\\\longleftrightarrow}} u(t)\\
+    \frac{1}{a + j2\pi f} &\mathrel{\substack{\mathcal{F}^{-1}\\\longleftrightarrow}} e^{-at} u(t) \\
     y(t) &= (1-2e^{-at}) u(t)
 \end{align}
 \begin{align}
