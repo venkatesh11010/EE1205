@@ -71,8 +71,7 @@ are shown below. If $y(t_d) = 0$ for $x(t) = u(t)$, the time $t_d (> 0)$ is.\\
 \begin{table}[!h]
     \centering
     \input{tables/table1.tex}
-    \caption{Caption}
-    \label{tab:my_label}
+    \caption{Input Parameters Table}
 \end{table}
 \begin{align}
     \because \abs{H\brak{f}} &= 1\\
@@ -85,8 +84,13 @@ At $2\pi f = 10^4, \angle{H(f)} = -\frac{\pi}{2}$
 \begin{align}
     \implies a = 10^4 
 \end{align}
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=\columnwidth]{figs/phase.png}
+    \caption{Phase of H(f)}
+\end{figure}
 \begin{align}
-    u(t) &\system{\mathcal{F}} \frac{1}{j2\pi f}\\
+    u(t) &\system{\mathcal{L}} \frac{1}{j2\pi f}\\
     Y(f) &= \frac{1}{j2\pi f} \frac{a - j2\pi f}{a + j2\pi f}\\
     &= \frac{1}{j2\pi f} - \frac{2}{a + j2\pi f}\\
     \frac{1}{j2\pi f} &\mathrel{\substack{\mathcal{F}^{-1}\\\longleftrightarrow}} u(t)\\
@@ -100,7 +104,5 @@ At $2\pi f = 10^4, \angle{H(f)} = -\frac{\pi}{2}$
 \begin{figure}[!h]
     \centering
     \includegraphics[width=\columnwidth]{figs/graph.png}
-    \caption{Caption}
-    \label{fig:enter-label}
 \end{figure}
 \end{document}
