@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.29)  24 FEB 2024 19:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.29)  24 FEB 2024 23:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1364,24 +1364,28 @@ Package pdftex.def Info: figs/given_graph.png  used on input line 65.
 (pdftex.def)             Requested size: 252.0pt x 148.75882pt.
 
 (./tables/table1.tex)
-<figs/phase.png, id=9, 462.528pt x 346.896pt>
+<figs/phase.png, id=10, 462.528pt x 346.896pt>
 File: figs/phase.png Graphic file (type png)
 <use figs/phase.png>
-Package pdftex.def Info: figs/phase.png  used on input line 88.
+Package pdftex.def Info: figs/phase.png  used on input line 90.
 (pdftex.def)             Requested size: 252.0pt x 189.00427pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \vbox (badness 1603) has occurred while \output is active []
+Underfull \vbox (badness 1014) has occurred while \output is active []
 
-<figs/graph.png, id=10, 462.528pt x 346.896pt>
+<figs/graph.png, id=11, 462.528pt x 346.896pt>
 File: figs/graph.png Graphic file (type png)
 <use figs/graph.png>
-Package pdftex.def Info: figs/graph.png  used on input line 111.
+Package pdftex.def Info: figs/graph.png  used on input line 115.
 (pdftex.def)             Requested size: 252.0pt x 189.00427pt.
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
  <./figs/given_graph.png> <./figs/phase.png>] [2
@@ -1391,10 +1395,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 44438 strings out of 478287
- 1025757 string characters out of 5849289
- 1530235 words of memory out of 5000000
- 61896 multiletter control sequences out of 15000+600000
+ 44439 strings out of 478287
+ 1025772 string characters out of 5849289
+ 1530279 words of memory out of 5000000
+ 61897 multiletter control sequences out of 15000+600000
  549420 words of font info for 203 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  101i,14n,96p,408b,327s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1407,10 +1411,10 @@ fb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/urw/times/utmri8a.pfb>
-Output written on main.pdf (2 pages, 125100 bytes).
+Output written on main.pdf (2 pages, 124525 bytes).
 PDF statistics:
- 95 PDF objects out of 1000 (max. 8388607)
- 66 compressed objects within 1 object stream
+ 96 PDF objects out of 1000 (max. 8388607)
+ 67 compressed objects within 1 object stream
  21 named destinations out of 1000 (max. 500000)
  28 words of extra memory for PDF output out of 10000 (max. 10000000)
 

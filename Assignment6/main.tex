@@ -73,13 +73,15 @@ are shown below. If $y(t_d) = 0$ for $x(t) = u(t)$, the time $t_d (> 0)$ is.\\
     \input{tables/table1.tex}
     \caption{Input Parameters Table}
 \end{table}
+
 % \because \abs{H\brak{f}} &= 1\\
 %     \abs{z} &= \abs{\bar{z}}\\
 %     \therefore H(f) &= \frac{a - j2\pi f}{a + j2\pi f}\\
+from graph \ref{Phase of H(f)}
 \begin{align}
-    \angle {H(f)} = -2 \tan^{-1}\brak{\frac{2\pi f}{a}}
+    \angle {H(j\omega)} = -2 \tan^{-1}\brak{\frac{\omega}{a}}
 \end{align}
-At $2\pi f = 10^4, \angle{H(f)} = -\frac{\pi}{2}$
+At $\omega = 10^4, \angle{H(j\omega)} = -\frac{\pi}{2}$
 \begin{align}
     \implies a = 10^4 
 \end{align}
@@ -87,19 +89,21 @@ At $2\pi f = 10^4, \angle{H(f)} = -\frac{\pi}{2}$
     \centering
     \includegraphics[width=\columnwidth]{figs/phase.png}
     \caption{Phase of H(f)}
+    \label{Phase of H(f)}
 \end{figure}
 \begin{align}
-    \angle {H(f)} &= \tan^{-1}\brak{\frac{-2\pi f}{a}} - \tan^{-1}\brak{\frac{2\pi f}{a}}\\
-    H(f) &= \frac{e^{j\tan^{-1}\brak{\frac{-2\pi f}{a}}}}{e^{j\tan^{-1}\brak{\frac{2\pi f}{a}}}}\\
-    &= \frac{\frac{a - j2\pi f}{\sqrt{a^2 + 4\pi^2 f^2}}}{\frac{a + j2\pi f}{\sqrt{a^2 + 4\pi^2 f^2}}}\\
-    &= \frac{a - j2\pi f}{a + j2\pi f}
+    \angle {H(j\omega)} &= \tan^{-1}\brak{\frac{-\omega}{a}} - \tan^{-1}\brak{\frac{\omega}{a}}\\
+    H(j\omega) &= \frac{e^{j\tan^{-1}\brak{\frac{-\omega}{a}}}}{e^{j\tan^{-1}\brak{\frac{\omega}{a}}}}\\
+    &= \frac{\frac{a - j\omega}{\sqrt{a^2 + \omega^2}}}{\frac{a + j\omega}{\sqrt{a^2 + \omega^2}}}\\
+    &= \frac{a - j\omega}{a + j\omega}
 \end{align}
+Substitute $s = j\omega$
 \begin{align}
-    u(t) &\system{\mathcal{L}} \frac{1}{j2\pi f}\\
-    Y(f) &= \frac{1}{j2\pi f} \frac{a - j2\pi f}{a + j2\pi f}\\
-    &= \frac{1}{j2\pi f} - \frac{2}{a + j2\pi f}\\
-    \frac{1}{j2\pi f} &\mathrel{\substack{\mathcal{F}^{-1}\\\longleftrightarrow}} u(t)\\
-    \frac{1}{a + j2\pi f} &\mathrel{\substack{\mathcal{F}^{-1}\\\longleftrightarrow}} e^{-at} u(t) \\
+    u(t) &\system{\mathcal{L}} \frac{1}{s}\\
+    Y(s) &= \frac{1}{s} \frac{a - s}{a + s}\\
+    &= \frac{1}{s} - \frac{2}{a + s}\\
+    \frac{1}{s} &\mathrel{\substack{\mathcal{L}^{-1}\\\longleftrightarrow}} u(t)\\
+    \frac{1}{a + s} &\mathrel{\substack{\mathcal{L}^{-1}\\\longleftrightarrow}} e^{-at} u(t) \\
     y(t) &= (1-2e^{-at}) u(t)
 \end{align}
 \begin{align}
