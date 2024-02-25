@@ -94,9 +94,10 @@ At $\omega = 10^4, \angle{H(j\omega)} = -\frac{\pi}{2}$
 \begin{align}
     \angle {H(j\omega)} &= \tan^{-1}\brak{\frac{-\omega}{a}} - \tan^{-1}\brak{\frac{\omega}{a}}\\
     H(j\omega) &= \frac{e^{j\tan^{-1}\brak{\frac{-\omega}{a}}}}{e^{j\tan^{-1}\brak{\frac{\omega}{a}}}}\\
+    &= \frac{\frac{a - j\omega}{\sqrt{a^2 + \omega^2}}}{\frac{a + j\omega}{\sqrt{a^2 + \omega^2}}}\\
     &= \frac{a - j\omega}{a + j\omega}
 \end{align}
-Substitute $j\omega = s$
+Substitute $s = j\omega$
 \begin{align}
     u(t) &\system{\mathcal{L}} \frac{1}{s}\\
     Y(s) &= \frac{1}{s} \frac{a - s}{a + s}\\
@@ -105,6 +106,17 @@ Substitute $j\omega = s$
     \frac{1}{a + s} &\mathrel{\substack{\mathcal{L}^{-1}\\\longleftrightarrow}} e^{-at} u(t) \\
     y(t) &= (1-2e^{-at}) u(t)
 \end{align}
+Verification of laplace transform:
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=\columnwidth]{figs/laplace_transform1.png}
+    \caption{Laplace Transform of $u(t)$}
+\end{figure}
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=\columnwidth]{figs/laplace_transform2.png}
+    \caption{Laplace Transform $of e^{-at} u(t)$}
+\end{figure}
 \begin{align}
     \because y(t_d) &= 0 \\
     t_d &= 100 \ln{2} \micro s 

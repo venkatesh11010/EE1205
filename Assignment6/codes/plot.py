@@ -41,5 +41,42 @@ plt.ylabel('Phase of H')
 plt.legend()
 plt.grid(True)
 plt.show()
+plt.clf()
+
+# Read data from the dat file
+data = np.loadtxt("data6_3.dat")
+
+# Extract frequency and phase values
+s_values = data[:, 0]
+l_values = data[:, 1]
+
+# Plot the graph
+plt.plot(s_values, l_values)
+plt.axhline(0, color='black', linewidth=1.5)
+plt.axvline(0, color='black', linewidth=1.5)
+plt.xlabel('s')
+plt.ylabel('Y(s)')
+plt.legend()
+plt.grid(True)
+plt.show()
+plt.clf()
+
+# Read data from the dat file
+data = np.loadtxt("data6_4.dat")
+
+# Extract frequency and phase values
+s_values = data[:, 0]
+l_values = data[:, 1]
+
+# Plot the graph
+plt.plot(s_values, l_values)
+plt.axhline(0, color='black', linewidth=1.5)
+plt.axvline(0, color='black', linewidth=1.5)
+plt.xlabel('s')
+plt.ylabel('Y(s)')
+plt.legend()
+plt.grid(True)
+plt.show()
+
 
 
