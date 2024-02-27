@@ -62,7 +62,7 @@ is controlled by a lag compensator
 $C(s) = \frac{s+10}{s+0.1}$
 The slope (in dB/decade) of the asymptotic Bode magnitude plot of the loop gain
 at $\omega= 3 $rad/s is \_\_\_\_\_\_\_\_ (in integer)
-\hfill(GATE 2022 IN 53)\\
+\hfill(GATE 2022 IN)\\
 \solution
 \begin{table}[!h]
     \centering
@@ -71,18 +71,36 @@ at $\omega= 3 $rad/s is \_\_\_\_\_\_\_\_ (in integer)
     \label{tab:Given Parameters list.gate2022.IN.53}
 \end{table}
 
-let $j\omega = s$\\
-The slope of the asymptotic Bode magnitude plot of the loop gain= $20\log_{10}\abs{L\brak{j\omega}}$
+% let $j\omega = s$\\
+% The slope of the asymptotic Bode magnitude plot of the loop gain= $20\log_{10}\abs{L\brak{j\omega}}$
+% \begin{align}
+%     \omega &= 3\\
+%     L\brak{j\omega} &= \frac{0.001\brak{3j+10}}{3j\brak{6j+1}\brak{0.03j+1}\brak{3j+0.1}}\\
+%     slope &\approx 20 \log_{10}\frac{0.001\times \sqrt{109}}{3\times \sqrt{37} \times 1 \times 3}\\
+%     &\approx -74  dB/decade
+% \end{align}
 \begin{align}
-    \omega &= 3\\
-    L\brak{j\omega} &= \frac{0.001\brak{3j+10}}{3j\brak{6j+1}\brak{0.03j+1}\brak{3j+0.1}}\\
-    slope &\approx 20 \log_{10}\frac{0.001\times \sqrt{109}}{3\times \sqrt{37} \times 1 \times 3}\\
-    &\approx -74  dB/decade
+    Gain(K) = \lim_{s\rightarrow 0} L(s)
+\end{align}
+Excluding $s$ and $\frac{1}{s}$,
+\begin{align}
+    K &= \lim_{s\rightarrow 0} \frac{0.001\brak{s+10}}{\brak{2s+1}\brak{0.01s+1}\brak{s+0.1}}\\
+    &= 0.1\\
+    \abs{L(s)} &= 20\log_{10} K\\
+    &= -20 dB/decade
+\end{align}
+Zero of L(s) = 10
+\begin{align}
+    \abs{L(s)} &= 20\log_{10} \omega
+\end{align}
+Poles of L(s) = 0, 0.1, 0.5, 100
+\begin{align}
+    \abs{L(s)} &= -20\log_{10} \omega
 \end{align}
 \begin{figure}[!h]
     \centering
     \includegraphics[width=\columnwidth]{figs/bode_mag_plot.png}
-    \caption{Bode magnitude plot of loop gain}
+    \caption{Pink Line = Bode magnitude plot of loop gain}
 \end{figure}
-
+Solpe of Bode magnitude plot (at $\omega=3$) = $-60$ dB/decade
 \end{document}

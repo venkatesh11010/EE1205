@@ -1,17 +1,53 @@
 #include <stdio.h>
-#include<math.h>
+#include <math.h>
 #include <float.h>
 
-double y_of_jw(float w) {
-    return (0.001 * sqrt(100 + pow(w, 2))) / (w * sqrt(4 * pow(w, 2) + 1) * sqrt(0.0001 * pow(w, 2) + 1) * sqrt(pow(w, 2) + 0.01));
+double zero1(double w) {
+    if(log10(w) > 1.0) {
+        return 20.0 * (log10(w) - 1.0);
+    }else{
+        return 0.0;
+    }
+}
+
+double pole1(double w) {
+    if(log10(w) > 0) {
+        return -20.0 * log10(w);
+    }else{
+        return 0.0;
+    }
+}
+
+double pole2(double w) {
+    if(log10(w) > 0.1) {
+        return -20.0 * (log10(w) - 0.1);
+    }else{
+        return 0.0;
+    }
+}
+
+double pole3(double w) {
+    if(log10(w) > -log10(0.5)) {
+        return -20.0 * (log10(w) + log10(0.5));
+    }else{
+        return 0.0;
+    }
+}
+
+double pole4(double w) {
+    if(log10(w) > 2.0) {
+        return -20.0 * (log10(w) - 2.0);
+    }else{
+        return 0.0;
+    }
 }
 
 int main() {
     FILE *fp;
     fp = fopen("data7.dat", "w");
     
-    for (double w = 0.1; w <= 10.0; w += 0.1) {
-        fprintf(fp, "%e %e\n", w, y_of_jw(w));
+    for (double w = 0.1; w <= 1000.0; w += 0.1) {
+        fprintf(fp, "%f %f %f %f %f %f %f %f\n", log10(w), zero1(w), pole1(w), pole2(w), pole3(w), pole4(w), -20.0, zero1(w)+pole1(w)+pole2(w)+pole3(w)+pole4(w)-20.0);
     }
 
     fclose(fp);
