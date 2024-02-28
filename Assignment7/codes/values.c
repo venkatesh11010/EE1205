@@ -46,7 +46,7 @@ int main() {
     FILE *fp;
     fp = fopen("data7.dat", "w");
     
-    for (double w = 0.1; w <= 1000.0; w += 0.1) {
+    for (double w = 0.01; w <= 1000.0; w += 0.01) {
         fprintf(fp, "%f %f %f %f %f %f %f %f\n", log10(w), zero1(w), pole1(w), pole2(w), pole3(w), pole4(w), -20.0, zero1(w)+pole1(w)+pole2(w)+pole3(w)+pole4(w)-20.0);
     }
 

@@ -2,9 +2,9 @@
 \hline
     Parameter & Description & Value\\
     \hline
-    $P(s)$ & Plant Transfer Function & $\frac{0.001}{s\brak{2s+1}\brak{0.01s+1}}$\\
+    $P(s)$ & Plant Transfer Function & $\frac{0.001}{s\brak{\frac{s}{0.5}+1}\brak{\frac{s}{100}+1}}$\\
     \hline
-    $C(s)$ & Lag Compensator  & $\frac{s+10}{s+0.1}$\\
+    $C(s)$ & Lag Compensator  & $\frac{100\brak{\frac{s}{10}+1}}{\frac{s}{0.1}+1}$\\
     \hline
     $L(s)$ & Loop gain=$P(s) C(s)$  & $\frac{0.1\brak{\frac{s}{10}+1}}{s\brak{\frac{s}{0.5}+1}\brak{\frac{s}{100}+1}\brak{\frac{s}{0.1}+1}}$ \\
     \hline

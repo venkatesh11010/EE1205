@@ -1,0 +1,17 @@
+\begin{tabular}{|c|c|c|}
+\hline
+    \textbf{Parameter} & \textbf{Range} & \textbf{Equation} \\
+    \hline
+    \multirow{6}{*}{$\abs{L(\omega)}$} & $\omega < 0$ & $0$\\
+   \cline{2-3}
+   & $0 < \omega < 0.1$ & $-20.0 * log_{10}(w)$ \\
+   \cline{2-3}
+   & $0.1 < \omega < 0.5 $ & $-20.0 * \brak{2log_{10}(w) - 0.1}$ \\
+   \cline{2-3}
+   & $0.5 < \omega < 10 $ & $-20.0 * \brak{3log_{10} - 0.1 + log_10{0.5}}$ \\
+   \cline{2-3}
+   & $10 < \omega < 100 $ & $-20.0 * \brak{2log_{10} + 0.9 + log_10{0.5}}$ \\
+   \cline{2-3}
+   & $\omega > 100 $ & $-20.0 * \brak{3log_{10} - 1.9 + log_10{0.5}}$ \\
+   \hline
+    \end{tabular}

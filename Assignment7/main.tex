@@ -71,38 +71,44 @@ at $\omega= 3 $rad/s is \_\_\_\_\_\_\_\_ (in integer)
     \label{tab:Given Parameters list.gate2022.IN.53}
 \end{table}
 
-% let $j\omega = s$\\
-% The slope of the asymptotic Bode magnitude plot of the loop gain= $20\log_{10}\abs{L\brak{j\omega}}$
-% \begin{align}
-%     \omega &= 3\\
-%     L\brak{j\omega} &= \frac{0.001\brak{3j+10}}{3j\brak{6j+1}\brak{0.03j+1}\brak{3j+0.1}}\\
-%     slope &\approx 20 \log_{10}\frac{0.001\times \sqrt{109}}{3\times \sqrt{37} \times 1 \times 3}\\
-%     &\approx -74  dB/decade
-% \end{align}
 \begin{align}
     Gain(K) = \lim_{s\rightarrow 0} L(s)
 \end{align}
-Excluding $s$ and $\frac{1}{s}$,
+Excluding $s$ and $\frac{1}{s}$, From Table \tabref{tab:Given Parameters list.gate2022.IN.53}
 \begin{align}
-    K &= \lim_{s\rightarrow 0} \frac{0.1\brak{\frac{s}{10}+1}}{\brak{\frac{s}{0.5}+1}\brak{\frac{s}{100}+1}\brak{\frac{s}{0.1}+1}}\\
-    &= 0.1\\
+    K &= 0.1
+\end{align}
+\begin{align}
     \abs{L(s)} &= 20\log_{10} K\\
-    &= -20 dB/decade
+    &= -20 dB
 \end{align}
-Here, $10,0,0.5,100,0.1$ are corner frequencies of loop gain L(s) \\
-In a Bode magnitude plot,\\
-Zero of L(s) = 10
-\begin{align}
-    \abs{L(s)} &= 20\log_{10} \omega
-\end{align}
-Poles of L(s) = 0, 0.1, 0.5, 100
-\begin{align}
-    \abs{L(s)} &= -20\log_{10} \omega
-\end{align}
+Here, $10,0,0.5,100,0.1$ are corner frequencies of loop gain L(s) 
+% In a Bode magnitude plot,\\
+% Zero of L(s) = 10
+% \begin{align}
+%     \abs{L(s)} &= 20\log_{10} \omega
+% \end{align}
+% Poles of L(s) = 0, 0.1, 0.5, 100
+% \begin{align}
+%     \abs{L(s)} &= -20\log_{10} \omega
+% \end{align}
+\begin{table}[!h]
+    \centering
+    \input{tables/table2}
+    \caption{Caption}
+    \label{tab:corner frequency.gate2022.IN.53}
+\end{table}
+\begin{table}[!h]
+    \centering
+    \input{tables/table3}
+    \caption{Caption}
+    \label{tab:net bode mag equation.gate2022.IN.53}
+\end{table}
 \begin{figure}[!h]
     \centering
     \includegraphics[width=\columnwidth]{figs/bode_mag_plot.png}
     \caption{Pink Line = Bode magnitude plot of loop gain}
 \end{figure}
+
 Slope of Bode magnitude plot (at $\omega=3$) = $-60$ dB/decade
 \end{document}
