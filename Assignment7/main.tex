@@ -70,11 +70,22 @@ at $\omega= 3 $rad/s is \_\_\_\_\_\_\_\_ (in integer)
     \caption{Given Parameters list}
     \label{tab:Given Parameters list.gate2022.IN.53}
 \end{table}
+\begin{align}
+    \abs{L(s)} &= \frac{0.1\brak{\frac{s}{10}+1}}{s\brak{\frac{s}{0.5}+1}\brak{\frac{s}{100}+1}\brak{\frac{s}{0.1}+1}}\label{eqn of loop gain.gate2022.IN.53}
+\end{align}
+Here, $10,0,0.5,100,0.1$ are corner frequencies of loop gain L(s) 
+
+\begin{table}[!h]
+    \centering
+    \input{tables/table2}
+    \caption{Caption}
+    \label{tab:corner frequency.gate2022.IN.53}
+\end{table}
 
 \begin{align}
     Gain(K) = \lim_{s\rightarrow 0} L(s)
 \end{align}
-Excluding $s$ and $\frac{1}{s}$, From Table \tabref{tab:Given Parameters list.gate2022.IN.53}
+Excluding $s$ and $\frac{1}{s}$, From equation \eqref{eqn of loop gain.gate2022.IN.53}
 \begin{align}
     K &= 0.1
 \end{align}
@@ -82,28 +93,16 @@ Excluding $s$ and $\frac{1}{s}$, From Table \tabref{tab:Given Parameters list.ga
     \abs{L(s)} &= 20\log_{10} K\\
     &= -20 dB
 \end{align}
-Here, $10,0,0.5,100,0.1$ are corner frequencies of loop gain L(s) 
-% In a Bode magnitude plot,\\
-% Zero of L(s) = 10
-% \begin{align}
-%     \abs{L(s)} &= 20\log_{10} \omega
-% \end{align}
-% Poles of L(s) = 0, 0.1, 0.5, 100
-% \begin{align}
-%     \abs{L(s)} &= -20\log_{10} \omega
-% \end{align}
-\begin{table}[!h]
-    \centering
-    \input{tables/table2}
-    \caption{Caption}
-    \label{tab:corner frequency.gate2022.IN.53}
-\end{table}
-\begin{table}[!h]
-    \centering
-    \input{tables/table3}
-    \caption{Caption}
-    \label{tab:net bode mag equation.gate2022.IN.53}
-\end{table}
+
+$H[\omega] = \begin{cases} 
+    0 &  \omega < 0 \\
+    -20 log_{10}(w) &  0 \leq \omega < 0.1 \\
+    -20.0 \brak{2log_{10}(w) - 0.1}  &  0.1 \leq \omega < 0.5 \\
+    -20.0 \brak{3log_{10} - 0.1 + log_10{0.5}}  &  0.5 \leq \omega < 10 \\
+    -20.0 \brak{2log_{10} + 0.9 + log_10{0.5}}  &  10 \leq \omega < 100 \\
+    -20.0 \brak{3log_{10} - 1.9 + log_10{0.5}}  &  \omega \geq 100 \\
+\end{cases}$
+
 \begin{figure}[!h]
     \centering
     \includegraphics[width=\columnwidth]{figs/bode_mag_plot.png}
