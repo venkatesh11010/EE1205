@@ -84,11 +84,13 @@ at $\omega= 3 $rad/s is \_\_\_\_\_\_\_\_ (in integer)
 \end{align}
 Excluding $s$ and $\frac{1}{s}$,
 \begin{align}
-    K &= \lim_{s\rightarrow 0} \frac{0.001\brak{s+10}}{\brak{2s+1}\brak{0.01s+1}\brak{s+0.1}}\\
+    K &= \lim_{s\rightarrow 0} \frac{0.1\brak{\frac{s}{10}+1}}{\brak{\frac{s}{0.5}+1}\brak{\frac{s}{100}+1}\brak{\frac{s}{0.1}+1}}\\
     &= 0.1\\
     \abs{L(s)} &= 20\log_{10} K\\
     &= -20 dB/decade
 \end{align}
+Here, $10,0,0.5,100,0.1$ are corner frequencies of loop gain L(s) \\
+In a Bode magnitude plot,\\
 Zero of L(s) = 10
 \begin{align}
     \abs{L(s)} &= 20\log_{10} \omega
@@ -102,5 +104,5 @@ Poles of L(s) = 0, 0.1, 0.5, 100
     \includegraphics[width=\columnwidth]{figs/bode_mag_plot.png}
     \caption{Pink Line = Bode magnitude plot of loop gain}
 \end{figure}
-Solpe of Bode magnitude plot (at $\omega=3$) = $-60$ dB/decade
+Slope of Bode magnitude plot (at $\omega=3$) = $-60$ dB/decade
 \end{document}
