@@ -71,7 +71,7 @@ at $\omega= 3 $rad/s is \_\_\_\_\_\_\_\_ (in integer)
     \label{tab:Given Parameters list.gate2022.IN.53}
 \end{table}
 \begin{align}
-    \abs{L(s)} &= \frac{0.1\brak{\frac{s}{10}+1}}{s\brak{\frac{s}{0.5}+1}\brak{\frac{s}{100}+1}\brak{\frac{s}{0.1}+1}}\label{eqn of loop gain.gate2022.IN.53}
+    \abs{T(s)} &= \frac{0.1\brak{\frac{s}{10}+1}}{s\brak{\frac{s}{0.5}+1}\brak{\frac{s}{100}+1}\brak{\frac{s}{0.1}+1}}\label{eqn of loop gain.gate2022.IN.53}
 \end{align}
 Here, $10,0,0.5,100,0.1$ are corner frequencies of loop gain L(s) 
 
@@ -83,23 +83,22 @@ Here, $10,0,0.5,100,0.1$ are corner frequencies of loop gain L(s)
 \end{table}
 
 \begin{align}
-    Gain(K) = \lim_{s\rightarrow 0} sL(s)
+    Gain(K) = \lim_{s\rightarrow 0} sT(s)
 \end{align}
 \begin{align}
     K &= 0.1
 \end{align}
 \begin{align}
-    \abs{L(s)} &= 20\log_{10} K\\
+    \abs{T(s)} &= 20\log_{10} K\\
     &= -20 dB
 \end{align}
 
-$H[\omega] = \begin{cases} 
-    0 &  \omega < 0 \\
-    -20 log_{10}(w) &  0 \leq \omega < 0.1 \\
+$T\brak{s} = \begin{cases} 
+    -20 log_{10}(w) &  \omega < 0.1 \\
     -20.0 \brak{2log_{10}(w) - 0.1}  &  0.1 \leq \omega < 0.5 \\
-    -20.0 \brak{3log_{10} - 0.1 + log_10{0.5}}  &  0.5 \leq \omega < 10 \\
-    -20.0 \brak{2log_{10} + 0.9 + log_10{0.5}}  &  10 \leq \omega < 100 \\
-    -20.0 \brak{3log_{10} - 1.9 + log_10{0.5}}  &  \omega \geq 100 \\
+    -20.0 \brak{3log_{10}{\omega} - 0.1 + log_{10}{0.5}}  &  0.5 \leq \omega < 10 \\
+    -20.0 \brak{2log_{10}{\omega} + 0.9 + log_{10}{0.5}}  &  10 \leq \omega < 100 \\
+    -20.0 \brak{3log_{10}{\omega} - 1.9 + log_{10}{0.5}}  &  \omega \geq 100 \\
 \end{cases}$
 
 \begin{figure}[!h]
