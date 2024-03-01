@@ -1,0 +1,91 @@
+%\iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                            \usepackage{tikz}
+\usepackage{circuitikz}
+\def\inputGnumericTable{}                                
+\usepackage[latin1]{inputenc}                            
+\usepackage{color}                                       
+\usepackage{array}                                       
+\usepackage{longtable}                                   
+\usepackage{calc}                              
+\usepackage{tikz}
+\usepackage{multirow}                                    
+\usepackage{hhline}                                      
+\usepackage{ifthen}                            
+\usepackage{caption}
+\usepackage{lscape}
+\usepackage{amsmath}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{GATE 2022 IN.53}
+\author{EE23BTECH11010 - VENKATESH BANDAWAR$^{*}$% <-this % stops a space
+}
+\maketitle
+\newpage
+\bigskip
+\textbf{Question:} The Bode magnitude plot for the transfer function $\frac{V_o(s)}{V_i(s)}$ of the circuit is as shown. The value of R is \_\_\_\_\_$\Omega$. \hfill(GATE 2021 EE Q20)
+\begin{figure}[!ht]
+    \centering
+    \input{figs/tikz}
+\end{figure}
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=\columnwidth]{figs/bode.png}
+    \caption{Caption}
+    \label{fig:enter-label}
+\end{figure}
+\solution
+\begin{table}[!ht]
+    \centering
+    \input{tables/table1}
+    \caption{Caption}
+    \label{tab:my_label}
+\end{table}
+\begin{align}
+    \omega_O &= \frac{1}{\sqrt{LC}}\\
+    &= 2000rad/sec
+\end{align}
+At resonant frequency, 
+\begin{align}
+    X_c &= \frac{1}{\omega C}\\
+    &= 2 \Omega\\
+     \frac{V_o}{V_i} &= \frac{X_c}{R} \\
+     &= \frac{2}{R}\\
+     \abs{T(s)} &= 20 \log\frac{V_o(s)}{V_i(s)}\\
+     26 &= 20 \log\frac{2}{R}\\
+     R &= 0.1 \Omega
+\end{align}
+
+\end{document}
