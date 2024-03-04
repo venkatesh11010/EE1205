@@ -71,18 +71,28 @@
     \caption{Given Parameters table}
     \label{Given Parameters table_2021_EE_20}
 \end{table}
-
+Applying KVL,
 \begin{align}
-    \because Z &= R + \frac{1}{j\omega c} + j\omega L\\
-    &= R + \frac{4000}{j\omega} + j\omega 10^{-3}\\
-    V_o &= V_i \frac{X_c}{Z}\\
-    \frac{V_o}{V_i} &= \frac{\frac{4000}{j\omega}}{R + \frac{4000}{j\omega} + j\omega 10^{-3}}
+    V_i - R I - L\frac{dI}{dt} - \frac{\int I dt}{C} = 0
 \end{align}
-Magnitude in bode plot = $20\log \abs{T(s)}$\\
-Substitute $s = j\omega$, From given graph at $\omega = 2000rad/s $
+Taking Laplace Transform ,
 \begin{align}
-    26 &= 20 \log\abs{\frac{-2j}{R - 2j + 2j}}\\
-    1.3 &= \log\frac{2}{R}\\
+    V_i(s) &- RI(s) - LsI(s) + LI(0^+) - \frac{I(s)}{sC} = 0\\
+    I(s) &= \frac{V_i(s) + LI(0)}{R + sL + \frac{1}{sC}}\\
+    V_o &= \frac{V_i(s) + LI(0)}{RsC + s^2LC + 1}
+\end{align}
+Substituting $I(0) = 0$ and $s = j\omega$,
+\begin{align}
+    \frac{V_o}{V_i} &= \frac{1}{\omega RCj -\omega^2LC + 1} 
+\end{align}
+$\because$ Magnitude in bode plot = $20\log \abs{T(s)}$\\
+From given graph,At $\omega = 2000$
+\begin{align}
+    26 &= 20 \log \frac{V_o}{V_i}\\
+    \frac{V_o}{V_i} &= 20
+\end{align}
+\begin{align}
+    \implies 20 &= \frac{1}{\omega RCj -\omega^2LC + 1} \\
     R &= 0.1 \Omega
 \end{align}
 
