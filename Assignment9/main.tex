@@ -83,7 +83,7 @@ Taking Laplace Transform ,
 \end{align}
 Substituting $I(0) = 0$ and $s = j\omega$,
 \begin{align}
-    \frac{V_o}{V_i} &= \frac{1}{\omega RCj -\omega^2LC + 1} 
+    \frac{V_o(j\omega)}{V_i(j\omega)} &= \frac{1}{\omega RCj -\omega^2LC + 1} 
 \end{align}
 $\because$ Magnitude in bode plot = $20\log \abs{T(s)}$\\
 From given graph,At $\omega = 2000$
@@ -95,5 +95,10 @@ From given graph,At $\omega = 2000$
     \implies 20 &= \frac{1}{\omega RCj -\omega^2LC + 1} \\
     R &= 0.1 \Omega
 \end{align}
-
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=\columnwidth]{figs/frequency_response.png}
+    \caption{Frequency response of $V_o$}
+    \label{frequency_response_2021_EE_20}
+\end{figure}
 \end{document}
