@@ -1,0 +1,121 @@
+%\iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                            \usepackage{tikz}
+\usepackage{circuitikz}
+\def\inputGnumericTable{}                                
+\usepackage[latin1]{inputenc}                            
+\usepackage{color}                                       
+\usepackage{array}                                       
+\usepackage{longtable}                                   
+\usepackage{calc}                              
+\usepackage{tikz}
+\usepackage{multirow}                                    
+\usepackage{hhline}                                      
+\usepackage{ifthen}                            
+\usepackage{caption}
+\usepackage{lscape}
+\usepackage{amsmath}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{GATE 2021 EE.20}
+\author{EE23BTECH11010 - VENKATESH BANDAWAR$^{*}$% <-this % stops a space
+}
+\maketitle
+\newpage
+\bigskip
+
+\section{Laplace Transform}
+Laplace transform of integrals:\\
+Let the function defined as $y(t) = \int_0^t f(u) du$ for all $t > 0$\\
+Laplace transform of y(t) in t 
+\begin{align}
+    \mathcal{L} \brak{y(t)} &= \int_0^{\infty} e^{-st} y(t) dt\\
+    &= \int_0^{\infty} e^{-st} \int_0^t f(u) du dt\\
+    &= \int_0^t f(u) du \sbrak{- \frac{e^{-st}}{s}}_0^{\infty} + \int_0^{\infty} \frac{e^{-st}}{s} f(t) dt\\
+    &= \frac{F(s)}{s}
+\end{align}
+
+
+\section{RLC Low Pass Filter}
+\begin{figure}[!ht]
+    \centering
+    \input{figs/tikz1}
+    \caption{RLC Low pass filter}
+\end{figure}
+\begin{align}
+    Y(s) &= I(s)Z_C\\
+    &= \frac{X(s)}{Z_L + Z_R + Z_C}Z_C\\
+    H(s) &= \frac{Y(s)}{X(s)}\\
+    &= \frac{Z_C}{Z_L + Z_R + Z_C}\\
+    &= \frac{\frac{1}{sC}}{sL + R + \frac{1}{sC}}\\
+    &= \frac{1}{s^2LC + sRC + 1}\\
+    \implies H(s) &= \omega_0^2\frac{1}{(s-p_1)(s-p_2)}
+\end{align}
+where,
+\begin{align}
+    \omega_0 &= \frac{1}{\sqrt{LC}}\\
+    p_{1, 2} &= -\frac{R}{2L} \pm \sqrt{\brak{\frac{R}{2L}}^2 - \frac{1}{LC}}\\
+    &= -\alpha \pm \sqrt{\alpha^2 - \omega_0^2}
+\end{align}
+where
+\begin{align}
+    \alpha &= \frac{R}{2L}
+\end{align}
+Damping Factor is given by,
+\begin{align}
+   \zeta &= \frac{\alpha}{\omega_0}\\
+   &= \frac{R}{2}\sqrt{\frac{C}{L}}
+\end{align}
+\begin{table}[!ht]
+    \centering
+    \input{tables/table1}
+    \caption{Effect of Damping Coefficient $\zeta$ on system behaviour}
+\end{table}
+\begin{figure}[!ht]
+    \centering
+    \input{figs/tikz2}
+    \caption{s-Plane for Overdamped case}
+\end{figure}
+\begin{figure}[!ht]
+    \centering
+    \input{figs/tikz3}
+    \caption{s-Plane for Critically damped case}
+\end{figure}
+\begin{figure}[!ht]
+    \centering
+    \input{figs/tikz4}
+    \caption{s-Plane for Under damped case}
+\end{figure}
+\end{document}
