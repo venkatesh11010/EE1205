@@ -79,7 +79,7 @@ Taking Laplace Transform ,
 \begin{align}
     V_i(s) &- RI(s) - LsI(s) + LI(0^+) - \frac{I(s)}{sC} = 0\\
     I(s) &= \frac{V_i(s) + LI(0)}{R + sL + \frac{1}{sC}}\\
-    V_o &= \frac{V_i(s) + LI(0)}{RsC + s^2LC + 1}
+    V_o(s) &= \frac{V_i(s) + LI(0)}{RsC + s^2LC + 1}
 \end{align}
 Substituting $I(0) = 0$ and $s = j\omega$,
 \begin{align}
@@ -88,11 +88,11 @@ Substituting $I(0) = 0$ and $s = j\omega$,
 $\because$ Magnitude in bode plot = $20\log \abs{T(s)}$\\
 From given graph,At $\omega = 2000$
 \begin{align}
-    26 &= 20 \log \frac{V_o}{V_i}\\
-    \frac{V_o}{V_i} &= 20
+    26 &= 20 \log \abs{\frac{V_o}{V_i}}\\
+    \abs{\frac{V_o}{V_i}} &= 20
 \end{align}
 \begin{align}
-    \implies 20 &= \frac{1}{\omega RCj -\omega^2LC + 1} \\
+    \implies 20 &= \abs{\frac{1}{\omega RCj -\omega^2LC + 1}} \\
     R &= 0.1 \Omega
 \end{align}
 \begin{figure}[!h]
