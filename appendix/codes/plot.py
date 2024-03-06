@@ -11,9 +11,9 @@ y_t2_values = data[:, 2]
 y_t3_values = data[:, 3]
 
 # Plot the graph
-plt.plot(t_values, y_t1_values)
-plt.plot(t_values, y_t2_values)
-plt.plot(t_values, y_t3_values)
+plt.plot(t_values, y_t1_values, label = 'overdamped')
+plt.plot(t_values, y_t2_values, label = 'cridamped')
+plt.plot(t_values, y_t3_values, label = 'underdamped')
 
 plt.axhline(0, color='black', linewidth=1.5)
 plt.axvline(0, color='black', linewidth=1.5)
@@ -21,6 +21,6 @@ plt.xlabel('t(in s)')
 plt.ylabel('y(t)')
 plt.legend()
 plt.grid(True)
-plt.legend()
+plt.legend(['overdamped', 'cridamped', 'underdamped'])
 plt.show()
 
